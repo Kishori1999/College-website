@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merienda', cursive;
+}
+    .top1{
+    display: flex;
+    
+    }
+    .logo{
+   flex-basis: 1%;
+   width: 100px;
+   float: left;
+   margin-left: 5px;
+   margin-top: 10px;
+    }
+    .start1 h1{
+    color: blue;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    }
+    .start1{
+    display: block;
+    margin-left: 22%;
+    }
+    .start1 h4{
+    text-align: center;
+    color: grey;
+    }
+    .start1 p{
+    text-align: center;
+    color: grey;
+    font-size: 17px;
+    }
+    .top2{
+        margin-top: 20px;
+    }
+    .top2 .nav-item{ 
+    font-size: 16px;
+    padding: 10px; 
+    }
+  .mega-menu{
+      width: 300px;
+      overflow: hidden;
+  }
+ .mega-menu  a{
+     text-decoration: none;
+     color: black;
+ }
+    @media screen and (max-width:700px) {
+       .mega-menu{
+
+        width:200px;
+       }
+    }
+    .main{
+        animation: opac 6s linear;
+    }  
+    .main .card{
+        margin-top: 10px;
+        padding: 4px;
+        width:80%;
+        text-align: center;
+        border: none;
+        transition: 0.4s;
+    }
+    .main .card:hover{
+        cursor: pointer;
+    }
+    .main img{
+        width: 240px;
+    }
+    .card-footer{
+        text-align: center;
+        margin-top: 7%;
+    }
+    @keyframes opac{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes bounce { 
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+        40% {transform: translateY(-30px);} 
+        60% {transform: translateY(-15px);} 
+     }
+     .mall{
+        transition: 1s ease;box-shadow: 3px 3px 6px grey;
+        
+        animation: 2s bounce linear;
+        cursor: pointer;
+    }
+    .mall1{
+        transition: 1s ease-in;box-shadow: 3px 3px 6px grey;
+        
+        animation: 2s bounce linear;
+        cursor: pointer;
+    }
+    .mall2{
+        transition: 1s ease-in;box-shadow: 3px 3px 6px grey;
+        
+        animation: 2s bounce linear;
+        cursor: pointer;
+    }
+    .mall3{
+        transition: 1s ease-in;box-shadow: 3px 3px 6px grey;
+        animation: 2s bounce linear;
+        cursor: pointer;
+    }
+    .mall4{
+        transition: 1s;box-shadow: 3px 3px 6px grey;
+        animation: 2s bounce linear;
+        cursor: pointer;
+    }
+    .mall5{
+        transition: 1s;box-shadow: 3px 3px 6px grey;
+        animation: 2s bounce linear;
+        cursor: pointer;
+    }
+    .mall6{
+        transition: 1s;box-shadow: 3px 3px 6px grey;
+        animation: 2s bounce linear;
+        cursor: pointer;
+    }
+    .mall7{
+        transition: 1s;box-shadow: 3px 3px 6px grey;
+        animation: 2s bounce linear;
+        cursor: pointer;
+    }
+    .mall8{
+        transition: 1s;box-shadow: 3px 3px 6px grey;
+        animation: 2s bounce linear;
+        cursor: pointer;
+    }
+    @keyframes zoomeffect{
+		0%{
+			background-position:center;
+		  transform:scale(1,1);
+		}
+		50%{
+			background-position:center;
+		  transform:scale(1.5,1.5);
+		}
+		100%{
+			background-position:center;
+		  transform:scale(1,1);
+		}
+}
+@media screen and (max-width:800px) {
+    .start1 h1{
+        font-size: 20px;
+    }
+    .start1 h4,.start1 p{
+        font-size: 16px;
+    }
+    
+}
+.footers1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("footer.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    margin-top: 3%;
+}
+.footers1 .btn{
+    margin-top: 55%;
+}
+.footers1 .btn{
+    background-color: cornflowerblue
+}
+ .footers1 a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+.footers1 a:hover{
+    color: chocolate;
+}

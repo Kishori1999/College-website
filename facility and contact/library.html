@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacilityHtml</title>
+    <script src="https://kit.fontawesome.com/53bf2bdbc3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:  'Merienda', cursive;
+    }
+        .top1{
+        display: flex;
+        
+        }
+        .logo{
+       flex-basis: 4%;
+       width: 130px;
+       float: left;
+       margin-left: 5px;
+       margin-top: 10px;
+        }
+        .start1 h1{
+        color: blue;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px;
+        }
+        .start1{
+        display: block;
+        margin-left: 22%;
+        }
+        .start1 h4{
+        text-align: center;
+        color: grey;
+        }
+        .start1 p{
+        text-align: center;
+        color: grey;
+        font-size: 17px;
+        }
+        .top2{
+            margin-top: 20px;
+        }
+        .top2 .nav-item{ 
+        font-size: 16px;
+        padding: 10px; 
+        }
+      .mega-menu{
+          width: 300px;
+          overflow: hidden;
+      }
+     .mega-menu  a{
+         text-decoration: none;
+         color: black;
+     }
+        @media screen and (max-width:700px) {
+           .mega-menu{
+    
+            width:200px;
+           }
+        } 
+        .main{
+            margin-top: 3%;
+        } 
+        .cont1, .cont3{
+            display: flex;
+            margin-top: 4%;
+            margin-left: 1%;
+        }
+        .cont2{
+            display: flex;
+            margin-top: 6%;
+            margin-left: 1%;
+        }
+        .cont p{
+            text-align: justify;
+        }
+        .cont1 img, .cont3 img{
+            margin-left: 1%;
+            width: 320px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .cont2 img{
+            margin-right: 1%;
+            width: 320px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        @media screen and (max-width:550px){
+            .cont{
+                display: block;
+            }
+        .cont1,.cont2,.cont3{
+            display: block;
+        }
+        .cont2{
+            margin-top: 50%;
+        }
+        .cont2 p{
+            margin-top: 47%;
+        }
+    }
+    .librarysection h2{
+        margin-top: 6%;
+        text-align: center;
+    }
+    .card-body{
+        text-align: center;
+    }
+    .librarysection .row{
+        margin-top: 4%;
+    }
+    .ecard h2{
+        text-align: center;
+        margin-top: 5%;
+    }
+    .ecard p{
+        margin-top: 2%;
+        text-align: center;
+    }
+    .ecard i{
+        font-size: 28px;
+        color: red;
+    }
+    .ecard .btn-primary{
+        margin-left: 46%;
+    }
+    .card-footer{
+        text-align: center;
+        margin-top: 3%;
+    }
+    @media screen and (max-width:800px) {
+    .start1 h1{
+        font-size: 20px;
+    }
+    .start1 h4,.start1 p{
+        font-size: 16px;
+    }
+    
+}
+    </style>
+    
+</head>
+<body>
+  <div class="top1">
+    <img src="logo.jpg" class="logo">
+    <div class="start1">
+        <h1> Srinivasa Education Institute</h1>
+        <H4> An Inter-State University</H4>
+        <p>(Accredited by NAAC with "B" Grade 9th place in Swachh Campus Ranking)</p>
+        </h1>
+    </div>
+</div>
+            <div class="top2">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                          <li class="nav-item">
+                            <a class="nav-link"  href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Administration</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Academics</a>
+                            </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" data-bs-toggle="dropdown" >Facilities</a>
+                            <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><a href="library.html">University Library</a></p>
+                                        <p><a href="placement.html">Placement Cell</a></p>
+                                        <p><a href="hostelindex.html">University Hostels</a></p>
+                                        <p><a href="computercenter.html">Computer Center</a></p>
+                                        <p><a href="nccindex.html">NCC</a></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><a href="womencellindex.html">Women's Cell</a></p>
+                                        <p><a href="scstindex.html">SC/ST Cell</a></p>
+                                        <p><a href="nssindex.html">NSS</a></p>
+                                        <p><a href="otherFacilityindex.html">Other Facilites</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Journals</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">RTI-ACT</a>
+                          </li><li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="contactindex.html" id="navbarScrollingDropdown" data-bs-toggle="dropdown"   aria-current="page">
+                              Contact
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="layoutmaphtml.html">Layout Map</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="contactindex.html"> Contact</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>  
+            <div class="main">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="library.jpg" class="d-block w-100" >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="lib2.jpg" class="d-block w-100" >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="lib3.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="lib4.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="lib5.jpg" class="d-block w-100">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="cont">
+            <div class="cont1">
+                <p>Libraries are backbone of any civilized society and heart of any academic institution. Thus the central library at Srinivasa Institute also acquires a prominent place among the students and faculty. The Institute Library System consists of a Central Library support the teaching, research and extension programmes of the institution in general and to promote  studies especially in the fields of comparative  literature and translation studies, religion, culture and indigenous science and national integration in particular. All students, faculty members and employees of the institution are entitled to make use of the Library facilities on taking library membership.</p>
+                <img src="libthumb.jpg" class="rounded float-end">
+            </div><br>
+            <div class="cont2">
+                <img src="libthumb1.jpg" class="rounded float-start"><br>
+                <p>Libraries provide authentic and reliable sources of information for researchers. They are able to complete their papers and carry out their studies using the material present in a library. Furthermore, libraries are a great place for studying alone or even in groups, without any disturbance.Moreover, libraries also help in increasing our concentration levels. As it is a place that requires pin drop silence, a person can study or read in silence. It makes us focus on our studies more efficiently. Libraries also broaden our thinking and make us more open to modern thinking.The people who cannot afford to buy new books and can simply borrow books from a library. This helps them in saving a lot of money and getting information for free.</p>
+            </div>
+            <div class="cont3">
+                <p>In short, libraries are a great place to gain knowledge. They serve each person differently. They are a great source of learning and promoting the progress of knowledge. One can enjoy their free time in libraries by reading and researching. As the world has become digitized, it is now easier to browse through a library and get what you are looking for. We develop our reading habits from a library and satisfy our thirst and curiosity for knowledge. This helps in the personal growth of a person and development.Thus, libraries help all, the ones visiting it and the ones employed there. We must not give up on libraries due to the digital age. Nothing can ever replace the authenticity and reliability one gets from a library.</p>
+                <img src="libthumb2.jpg" class="rounded float-end">
+            </div>
+        </div>
+        <div class="librarysection">
+            <h2>Sections</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="acquisition.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Acquisition </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="textbooks.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Text Books</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="periodicals.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Periodicals</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <img src="magazine.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Magazines</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="newspaper.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">NewsPapers</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="reference.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Reference</h5>
+                      </div>
+                    </div>
+                  </div>
+              </div>    
+        </div>
+    <div class="ecard">
+        <h2>LIBRARY CARD</h2>
+        <p>Students can get register <i class="far fa-hand-point-down"></i> for their Library Card here!</p>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Get!
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Student Library Card Registration</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Registration Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Reg.No">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Stream</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Stream">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Year</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Year">
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card-footer text-danger">
+    Copyright © 2021 Srinivasa Education Institute. All rights reserved.
+</div> 
+</body>
+</html>

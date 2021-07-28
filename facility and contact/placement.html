@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Cell</title>
+    <script src="https://kit.fontawesome.com/53bf2bdbc3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        font-family:  'Merienda', cursive;
+    }
+        .top1{
+        display: flex;
+        
+        }
+        .logo{
+       flex-basis: 4%;
+       width: 130px;
+       float: left;
+       margin-left: 5px;
+       margin-top: 10px;
+        }
+        .start1 h1{
+        color: blue;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px;
+        }
+        .start1{
+        display: block;
+        margin-left: 22%;
+        }
+        .start1 h4{
+        text-align: center;
+        color: grey;
+        }
+        .start1 p{
+        text-align: center;
+        color: grey;
+        font-size: 17px;
+        }
+        .top2{
+            margin-top: 20px;
+        }
+        .top2 .nav-item{ 
+        font-size: 16px;
+        padding: 10px; 
+        }
+      .mega-menu{
+          width: 300px;
+          overflow: hidden;
+      }
+     .mega-menu  a{
+         text-decoration: none;
+         color: black;
+     }
+        @media screen and (max-width:700px) {
+           .mega-menu{
+    
+            width:200px;
+           }
+        } 
+        .main{
+            margin-top: 3%;
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("place.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 150vh;
+            width: 100%;
+            color: white;
+        }
+        @media screen and (max-width:600px) {
+          .main{
+              height: 200vh;
+          }  
+        }
+        .jumbotron{
+            padding: 10px;
+        }
+        .main1{
+            text-align: center;
+            justify-content: center;
+            margin-top: 3%;
+            border: 1px dashed grey;
+        }
+        .card-text i{
+            color: yellowgreen;
+            font-size: 18px;
+        }
+        .card-text{
+            margin-top: 4%;
+        }
+        .card-footer{
+        text-align: center;
+        margin-top: 6%;
+    }
+    @keyframes moveIn {
+  50%, 100% { 
+    transform: translateY(0em)
+  }
+  0%   { 
+  opacity: 0; 
+  filter: blur(10px);
+  
+  }
+  100% { 
+  opacity: 1; 
+  filter: blur(0px);
+  }
+}
+.main1 img{
+  animation: moveIn 6s ease-in-out;
+}
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+h1,h4,p,i{
+  animation: fadeInBottom  3s ease-in;
+}
+@media screen and (max-width:800px) {
+    .start1 h1{
+        font-size: 20px;
+    }
+    .start1 h4,.start1 p{
+        font-size: 16px;
+    }
+    
+}
+        </style>
+</head>
+<body>
+  <div class="top1">
+    <img src="logo.jpg" class="logo">
+    <div class="start1">
+        <h1> Srinivasa Education Institute</h1>
+        <H4> An Inter-State University</H4>
+        <p>(Accredited by NAAC with "B" Grade 9th place in Swachh Campus Ranking)</p>
+        </h1>
+    </div>
+</div>
+            <div class="top2">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                          <li class="nav-item">
+                            <a class="nav-link"  href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Administration</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Academics</a>
+                            </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" data-bs-toggle="dropdown" >Facilities</a>
+                            <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><a href="library.html">University Library</a></p>
+                                        <p><a href="placement.html">Placement Cell</a></p>
+                                        <p><a href="hostelindex.html">University Hostels</a></p>
+                                        <p><a href="computercenter.html">Computer Center</a></p>
+                                        <p><a href="nccindex.html">NCC</a></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><a href="womencellindex.html">Women's Cell</a></p>
+                                        <p><a href="scstindex.html">SC/ST Cell</a></p>
+                                        <p><a href="nssindex.html">NSS</a></p>
+                                        <p><a href="otherFacilityindex.html">Other Facilites</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Journals</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">RTI-ACT</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="contactindex.html" id="navbarScrollingDropdown" data-bs-toggle="dropdown"   aria-current="page">
+                              Contact
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="layoutmaphtml.html">Layout Map</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="contactindex.html"> Contact</a></li>
+                            </ul>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>  
+            <div class="main">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h1>Promise A Bright Future!</h1>      
+                      <p>Promising assured
+                        placement
+                        to every student of our Institution.</p>
+                    </div>
+                  </div>
+                  <div class="main1">
+                    <figure class="text-center">
+                        <blockquote class="blockquote" style="margin-top: 2%;">
+                          <p>What your students receive is
+                            Not just placements, but a complete career transformation</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer" style="margin-top: 2%;">
+                            <img src="degree.jpg" class="rounded">
+                        </figcaption>
+                    </figure>
+            </div> 
+            <div class="cardz" style="margin-top: 2.5%;">
+                <div class="card-group" >
+                    <div class="card" style="padding:10px; background: transparent; border:none" >
+                      <div class="card-body">
+                        <h4 class="card-title">An Institute associates with us:</h4>
+                        <p class="card-text"><i class="far fa-check-circle"></i>We take placement record to 100%</p>
+                        <p class="card-text"><i class="far fa-check-circle"></i>Includes graduate and alumni</p>
+                        <p class="card-text"><i class="far fa-check-circle"></i>Assigned Relationship Manager for best result</p>
+                      </div>
+                    </div>
+                    <div class="card" style="padding: 10px; background: transparent; border:none; margin-top: 5px;">
+                        <h4 class="card-title">Enthusiasm</h4>
+                        <p class="card-text"><i class="far fa-check-circle"></i> There is a great deal of enthusiasm among final year students when the placement season starts off.</p>
+                        <p class="card-text"><i class="far fa-check-circle"></i> Students come forward with their queries regarding companies, placement procedures and the Placement Cell members readily help them.</p>
+                    </div>
+                    <div class="card" style="padding:10px; background: transparent; border:none">
+                      <div class="card-body">
+                        <h4 class="card-title">What our Students receive:</h4>
+                        <p class="card-text"><i class="far fa-check-circle"></i>1-1 Expert Consultation</p>
+                        <p class="card-text"><i class="far fa-check-circle"></i>Training in resume building and social profile</p>
+                        <p class="card-text"><i class="far fa-check-circle"></i>Direct training from top professionals</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+            <div class="hire">
+                <h3 class="text-center" style= "text-transform: capitalize; margin-top: 3%;">We bring you a network of:</h3>
+                <div class="row" style="margin-top: 4%; text-align: center;">
+                    <div class="col">
+                        <h2 style="color: blue; font-weight: bold;">100+</h2>
+                        <p>Companies</p>
+                    </div>
+                    <div class="col">
+                        <h2 style="color: green; font-weight: bold;">300+</h2>
+                        <p>Aspirants Currently Hired</p>
+                    </div>
+                    <div class="col">
+                        <h2 style="color: red; font-weight: bold;">4.5+LPA</h2>
+                        <p>Average CTC of Aspirants Placed</p>
+                    </div>
+                </div>
+                <figure class="text-end" style="margin-top: 8%; border: 1px solid transparent;">
+                    <blockquote class="blockquote">
+                      <p>"Successful people do what unsuccessful people are not willing to do. Don't wish it were easier; wish you were better."</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                      <small>-- Jim Rohn</small>
+                    </figcaption>
+                  </figure>
+            </div>
+            <div class="card-footer text-danger">
+                Copyright © 2021 Srinivasa Education Institute. All rights reserved.
+            </div>
+            
+</body>
+</html>

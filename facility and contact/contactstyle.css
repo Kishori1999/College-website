@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merienda', cursive;
+}
+.top1{
+    display: flex;
+    
+}
+.logo{
+   flex-basis: 4%;
+   width: 130px;
+   float: left;
+   margin-left: 5px;
+   margin-top: 10px;
+}
+.start1 h1{
+    color: blue;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.start1{
+    display: block;
+    margin-left: 22%;
+}
+.start1 h4{
+    text-align: center;
+    color: grey;
+}
+.start1 p{
+    text-align: center;
+    color: grey;
+    font-size: 17px;
+}
+.top2 .nav-item{ 
+  font-size: 16px;
+  padding: 10px;
+  
+}
+.top2{
+    margin-top: 20px;
+}
+
+
+.map-container-2{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-2 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+.main{
+    display: block;
+    margin-top: 5%;
+}
+@media screen and (max-width:600px) {
+    .maps{
+        width: 200px;
+    }
+}
+@media screen and (min-width:850px) and (max-width:1400px) {
+    .maps{
+        margin-left: 35%;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .form1{
+        margin-left: 4%;
+        width: 50%;
+    }
+    .mails p{
+        font-size: 14px;
+    }
+    .footers{
+        font-size: 12px;
+    }
+    
+}
+.form1{
+    margin-left: 15%;
+    margin-top: 2%;
+}
+.col .btn {
+    border: 1px solid lightgray;
+    background-color: rgb(12, 167, 12);
+    padding: 10px 25px;
+    margin-top: 10px;
+}
+.col textarea{
+    border: 1px solid lightgray;
+}
+.cont{
+    margin-top: 5%;
+    font-size: 15px;
+    font-weight: 400;
+}
+.cont p{
+    margin-left: 2%;
+    font-weight: 600;
+}
+.cont i{
+    font-size: 19px;
+    color: red;
+    margin-left: 0;
+}
+.contct{
+    margin-top: 5%;
+    text-align: center;
+}
+.contct h2{
+    color: blueviolet;
+}
+.contct img{
+    height:400px;
+    margin-top: 20px;
+}
+.mails{
+    margin-top: 3%;
+    justify-content: center;
+}
+.mails h4{
+    color: brown;
+    text-align: center;
+}
+.mails p{
+    margin-left: 0%;
+    text-align: center;
+}
