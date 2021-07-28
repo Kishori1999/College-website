@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  
+  width: 70%;
+  border-left: none;
+  
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+</head>
+<body>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/university.jpg"  width="300" height="300">
+        <div class="carousel-caption">
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="images/university2.jpg"  width="1100" height="500">
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="images/university.jpg" width="1100" height="500">
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <br><br>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'school')" id="defaultOpen">Schools and Departments</button>
+  <button class="tablinks" onclick="openCity(event, 'deans')">Deans of Various Schools</button>
+  <button class="tablinks" onclick="openCity(event, 'head')">Head of the Departments</button>
+  <button class="tablinks" onclick="openCity(event, 'academic')">Academic Calender</button>
+  <button class="tablinks" onclick="openCity(event, 'board')">Board of Studies</button>
+  <button class="tablinks" onclick="openCity(event, 'best')">Best Practices</button>
+  <button class="tablinks" onclick="openCity(event, 'iqac')">IQAC</button>
+  <button class="tablinks" onclick="openCity(event, 'ugccoaching')">UGC Coaching Schemes</button>
+  <button class="tablinks" onclick="openCity(event, 'ugccell')">UGC Cell</button>
+  <button class="tablinks" onclick="openCity(event, 'ciqa')">CIQA</button>
+  <button class="tablinks" onclick="openCity(event, 'aqar')">AQAR:2018-19</button>
+</div>
+<div id="school" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+        <h1>Schools and Departments</h1>
+      </div>
+        <div class="row">
+          <div class="col"><a href="link1.html">School of Commerce & Management</a></div>
+          <div class="col"><a href="link2.html">School of Comparative Literature and Translation Studies</a></div>
+          <div class="col"><a href="link3.html">School of Education and Human Resource Development</a></div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col"><a href="link4.html"> of Herbal Studies and Naturo Sciences</a></div>
+          <div class="col"><a href="link5.html">School of Human and Social Sciences</a></div>
+          <div class="col"><a href="link6.html">School of Sciences & Technology</a></div>
+        </div>
+   
+    
+</div>
+<div id="deans" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+        <h1>Deans of Various Schools</h1>
+      </div>
+      <div  class="table-responsive">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Name of the School</th>
+              <th>Dean</th>
+              <th>Contact Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td>Academic Affairs </td>
+              <td>Prof. S. Aquter Babu</td>
+              <td>+91-81860 20325</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>School of Comparative Literature &amp; Translation Studies </td>
+              <td>Prof. N. Susheela</td>
+              <td>83330 87967</td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>School of Human &amp; Social    Sciences </td>
+              <td>Prof. P. C. Venkatasubbaiah </td>
+              <td>9441538676</td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td>School of Education &amp;    HRD</td>
+              <td>Prof. J.V.Satyavani</td>
+              <td>94411 34856   </td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td>School of Herbal Studies &amp; Naturo Sciences  I/c</td>
+              <td>Prof. V. Lokanatha </td>
+              <td>9652840923</td>
+            </tr>
+            <tr>
+              <td>06</td>
+              <td>School of Science &amp    Technology</td>
+              <td>Prof. M. Doraswamy</td>
+              <td>9440219118</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="head" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+        <h1>Head of the Departments</h1>
+    </div>
+    <table class="table table-dark table-striped table-responsive">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name of the Department</th>
+          <th>hod</th>
+          <th>Contact no</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr >
+          <td>01</td>
+          <td><a href="cdlp.php" class="style4"> Dept. of Comparative Dravidian Literature and Philosophy </a></td>
+          <td>Prof.N.Susheela </td>
+          <td>83330 87967</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td> <a href="science-technology.php" class="style4"> Dept. of Computer Science and Technology</a></td>
+          <td>Dr. K.Ammulu </td>
+          <td>08985813438</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td><a href="education-dept.php" class="style4"> Dept. of Education & Human Resource Development </a></td>
+          <td>Dr. S. Vijaya Vardhini</td>
+          <td>+91-94416 44461 </td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td><a href="history.php" class="style4"> Dept. of History,Archaeology and Culture </a> </td>
+          <td>Dr Aravind Kumar </td>
+          <td>9391029522</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td> <a href="dept-folklore.php" class="style4"> Dept. of Folklore and Tribal Studies </a> </td>
+          <td>Dr. M.N.Venkatesha</td>
+          <td>07382753182 </td>
+        </tr>
+        <tr>
+          <td>06</td>
+          <td> <a href="telugu.php" class="style4"> Dept. of Telugu and Translation Studies </a> </td>
+          <td>Dr.A.K.Venugopal Reddy</td>
+          <td bgcolor="#f0f0f0" >8639647337</td>
+        </tr>
+        <tr>
+          <td><p align="center">07</td>
+          <td> <a href="tamil.php" class="style4"> Dept of Tamil Language and Translation Studies </a> </td>
+          <td>Dr. T. Vishnukumaran, I/c</td>
+          <td bgcolor="#f0f0f0" >9493371545</td>
+        </tr>
+        <tr>
+          <td>08</td>
+          <td> <a href="kannada.php" class="style4"> Dept. of Kannada and Translation Studies </a> </td>
+          <td>Dr. M. S. Durga Praveena, I/c </td>
+          <td> 09441997639</td>
+        </tr>
+        <tr>
+          <td>09</td>
+          <td><a href="linguistics.php" class="style4"> Dept. of Dravidian & Computational Linguistics </a> </td>
+          <td> Dr.M. C. Kesava Murty</td>
+          <td>9440505878</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><a href="english.php" class="style4"> Dept. of English & Communications </a> </td>
+          <td>Prof.Ch.A Rajendra Prasad</td>
+          <td>89857 56921</td>
+        </tr>
+        <tr>
+          <td><p align="center">11</td>
+          <td><a href="herbal-sciences.php" class="style4"> Dept. of Bio-technology </a> </td>
+          <td>Prof. Lokanatha Valluru</td>
+          <td>9652840923</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td><a href="commerce-management.php" class="style4"> Dept. of Commerce and Management </a> </td>
+          <td>Prof. G. L. Narayanappa</td>
+          <td>98495 35902</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td  ><a href="dept-chemistry.php" class="style4"> Dept. of Chemistry </a> </td>
+          <td>Prof. N. Susheela  I/c</td>
+          <td bgcolor="#f0f0f0" >83330 87967</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td><a href="language-teaching.php" class="style4"> Dept. of Language Teaching Technology </a> </td>
+          <td>Prof. J. V. Satyavani</td>
+          <td>94411 34856</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td><a href="malayalam.php" class="style4"> Dept. of Malayalam </a> </td>
+          <td>Dr. P. Sreekumar I/c</td>
+          <td>94413 30821</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td><a href="tulu.php" class="style4"> Dept. of Tulu Language and Translation Studies </a> </td>
+          <td>Dr. B. S. Shiva Kumar </td>
+          <td>94413 30816</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td><a href="dept-maths.php" class="style4"> Dept. of Mathematics &amp;Statistics </a> </td>
+          <td>Prof. S. Aquter Babu</td>
+          <td>+91-9440263687</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td><a href="physical-education.php" class="style4"> Dept. of Physical Education- Director </a> </td>
+          <td>Prof. J. V. Satyavani</td>
+          <td>94411 34856</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td> <a href="dept-library.php" class="style4"> Dept. of Library &amp; Information Science- Library </a> </td>
+          <td>Dr. M. Doraswamy I/c</td>
+          <td>94402 19118</td>
+        </tr>
+        
+         <tr>
+          <td>20</td>
+          <td> <a href="prasaaranga.php" class="style4"> Centre for Publications </a> </td>
+          <td>Dr.D.Udaya Kumari</td>
+          <td>99513 22788</td>
+        </tr>
+        
+      </tbody>
+    </table>
+</div>
+<div id="academic" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+        <h1>Academic Calender</h1>
+    </div>
+    <embed src="doc/Academic_Calenders_2018-20.pdf" type="application/pdf" width="100%" height="600px" />
+  </div>
+  <div id="board" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+        <h1>Board of Studies</h1>
+    </div>
+    <table class="table table-dark table-striped table-responsive">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name of the Department</th>
+          <th>Chairman</th>
+         </tr>
+      </thead>
+      <tbody>
+        <tr >
+          <td>1</td>
+          <td>Department of Bio-Chemistry</td>
+          <td>Prof. K.Thyagaraju,Dept of Bio-Chemistry, 
+            S.V.University</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td >Department of Bio-Technology</td>
+          <td >Prof. C. Varadarajulu Naidu,Dept of Biotechnology,Dravidian University</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Department of Botany</td>
+          <td>Prof. T.Pullaih,Dept of Botany, S.K.University</td>
+        </tr>
+        <tr>
+          <td >4</td>
+          <td>Department of Comparative Dravidian Literature and    Philosophy</td>
+          <td >Prof. S. Penchalaiah, Dept of CDL&amp;P, Dravidian University</td>
+        </tr>
+      <tr>
+          <td >5</td>
+          <td >Department of Commerce and Management</td>
+          <td >Prof.G.L. Narayanappa, Dept of of Commerce and Management, Dravidian University</td>
+        </tr>
+        <tr>
+          <td >6</td>
+          <td >Department of Chemistry</td>
+          <td>Prof. Y.V. Rami Reddy, Professor of Chemistry, S.V.university</td>
+        </tr>
+        <tr>
+          <td >7</td>
+          <td>Department of Computer Science and Technology</td>
+          <td>Prof. S. Aquter Babu, Dept of Computer Science , Dravidian University</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td >Department of Education &amp; HRD</td>
+          <td >Prof D. Srinivas Kumar,Dept of Education &amp; HRD, Dravidian University</td>
+        </tr>
+        <tr>
+          <td  >9</td>
+          <td>Department of English &amp; Communications</td>
+          <td>Prof.B.Tiruapati Rao,Dept of English &amp; Communications,Dravidian University</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Department of Folklore &amp; Tribal Studies</td>
+          <td>Dr. K.Shyamala, Dept of Folklore &amp; Tribal Studies,Dravidian University</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Department of History, Archaeology &amp; Culture</td>
+          <td >Dr P.C.Venkatasubbaiah,Dept of History, Archaeology &amp; Culture, Dravidian University</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Department of Kannada Language &amp; Translation Studies</td>
+          <td>Prof.K.Sharada,Dept of Kannada Language &amp; Translation Studies, Dravidian University</td>
+        </tr>
+        <tr >
+          <td>13</td>
+          <td>Department of Library and Information Science</td>
+          <td >Dr. M. Doraswamy, Dept of Library and Information Science, Dravidian University</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Department of Dravidian &amp; Computational Linguistics</td>
+          <td>Prof. Ganeshan Ambedkar, Dept of Dravidian &amp; Computational Linguistics, Dravidian Univ</td>
+        </tr>
+        <tr>
+          <td >15</td>
+          <td>Department of Malayalam</td>
+          <td>Dr. Anil Vallathol, Dept of Malayalam, Calicut University</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Department of Mathematics</td>
+          <td>Prof. S.Sreenadh, Dept. of Mathematics, S.V.university</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Department of Micro Biology</td>
+          <td>Prof. Z.Vishuvardhan,Dept of Micro Biology,Acharya Nagarjuna University</td>
+        </tr>
+        <tr>
+          <td >18</td>
+          <td>Department of Physical Education</td>
+          <td>Dr. M.Sivashankar Reddy,Dept of Physical Education, Dravidian University</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Department of Physics</td>
+          <td>Prof. C.K.Jayasankar,Dept of Physics,S.V.University</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>M.A. Rural Development</td>
+          <td>Prof. G.Sreedhar,Dept of Rural Development,S.K.University</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="best" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+        <h1>Best Practices</h1>
+    </div>
+    <embed src="doc/best_Practice1&2.pdf" type="application/pdf"   width="100%" height="600px" />
+  </div>
+  <div id="iqac" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+      <h1>Internal Quality Assurance Cell (IQAC)</h1>
+    </div>
+    <h3>The Internal Quality Assurance Cell (IQAC) Commitee is re-constituted with the following members, until further orders vide the latest proceedings (Click)</h3>
+    <br>
+    <div>
+      <div  style="width:200px;float:left;margin: 10px; border: black;">
+      <img class="card-img-top" src="images/director.jpg" alt="Card image" style="width: 200px; height: 200px;">
+      <div class="card-body">
+        <p>Dr. Lokanatha Valluru <br>Director</p>
+      </div>
+      </div>
+      <div style="width:200px;float:right;margin: 10px;">
+        <img class="card-img-top" src="images/asistant-director.dib" alt="Card image" style="width:200px;height: 200px;">
+        <p>Dr. S.Rajeswara Reddy <br>
+        Assistant Director</p>
+      </div>
+      </div>
+      <table class="table table-dark table-striped table-responsive">
+        <tr>
+          <td>1</td>
+          <td>Hon'ble Vice-Chancellor<br>Dravidian University</td>
+          <td>Chairman</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td> Dean, Academic Affairs</td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>3</p></td>
+          <td>Dean<br>School of Comparative Literature & Translation Studies</td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>>4</p></td>
+          <td>Dean,<br>School of Human & Social Sciences</td>
+          <td>Member</td>
+        </tr>
+        
+        <tr>
+          <td>5</p></td>
+          <td>Dean,<br>School of Education & HRD</td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>>6</td>
+          <td>Dean,<br>School of Herbal Studies & Naturo Sciences</td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Dean,<br>
+            School of Science & Technology</td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Dean, <br />
+          School of Commerce & Management<br/>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Prof. K. Sharada<br />
+          Dept. of Kannada & TS </td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Registrar <br/>Dravidian University<br/>(Administrative Official) </td>
+          <td>Member</td>
+        </tr>
+        
+        <tr>
+          <td>11</td>
+          <td>Prof. K. Nagendra Prasad<br />
+            (Formerly Registrar, Vikrama Simhapuri University, Nellore)
+            </br> Professor of Civil Engineering, SVU College of Engineering, Tirupati. </td>
+          <td>Member <br/> (External Expert)</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Sri. M. Venkata Ramana Reddy<br />
+            Business Operations Leader<br />IBM,Bangalore
+          <td>Member <br/> (External Expert)</td>
+        </tr>
+         <tr>
+          <td>13</td>
+          <td>Sri Chakrapani Reddy<br />
+            Former Chairman</br>RESCO, Kuppam</td>
+          <td>Member <br/> (External Expert)</td>
+        </tr>
+        
+        <tr>
+          <td>14</td>
+          <td>Prof. Varada Reddyy<br />
+            Retd. Professor of Chemistry </br>Sri Venkateswara University,Kuppam</td>
+          <td>Member <br/> (External Expert)</td>
+        </tr>
+        
+         <tr>
+          <td>15</td>
+          <td>Assistant Director<br />
+            IQAC</br></td>
+          <td>Internal Member<strong> </strong></td>
+        </tr>
+         <tr>
+          <td>16</td>
+          <td> Director<br />
+            IQAC</br></td>
+          <td>Member Secretary<strong> </strong></td>
+        </tr>
+      </table>
+     </div>
+<div id="ugccoaching" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+        <h1>NET Coaching for SC-ST-OBC-Minority</h1>
+    </div>
+    <div class="row">
+    <div class="col">
+      <img src="images/1img.jpg" class="rounded" alt="Cinque Terre" width="300" height="300">
+    </div>
+    <div class="col">
+      <img src="images/2img.jpg" class="rounded" alt="Cinque Terre" width="300" height="300">
+    </div>
+    <div class="col">
+      <img src="images/3img.jpg" class="rounded" alt="Cinque Terre" width="300" height="300">
+    </div>
+    </div>
+    <br><br>
+    <p>Students from Departments of History, English, Kannada, Tamil, Telugu, Computer Science etc. registering themselves fro UGC-NET coaching. The coaching for paper 1, teaching and research aptitude was conducted by the Coordinator,Dr.M. C. Kesava Murty, with the valuable services of faculty of different Departments in our University. Coaching for paper 2 and 3 are done with the help of experts from other Universities and also senior faculty of our University. About Rs. 1.0 lacs is spent towards procuring reference books and also study material (freely distributed) to the students.</p>
+   <br>
+   <p>
+    Annual Report for the year 2012-2013 <a href="doc/1doc.pdf">click here</a><br>
+    Annual Report for the year 2013-2014 <a href="doc/2doc.pdf">click here</a><br>
+    Annual Report for the year 2014-2015 <a href="doc/3doc.pdf">click here</a><br>
+    Annual Report for the year 2015-2016 <a href="doc/5doc.pdf">click here</a><br>
+    Annual Report for the year 2015-16 & 2016-17 <a href="">click here</a><br>
+   </p>
+   <br>
+   <div style="text-align: center;" class="jumbotron">
+    <h1>Coaching for Entry into Civil Services</h1>
+   </div>
+   <p>Under coaching for entry into services scheme About Rs. 2.0 lacs were spent for procuring standard books regarding various competitive exams. About 800 titles were bought covering basics to high standard discourses of various subjects. These books comprises areas such as History, Culture, Heritage, India Polity and Politics, Indian Economy, Geography, Numerical and Arithmetical Ability, Logic and Reasoning, General and Special Aptitude, Physical Sciences, Natural Sciences, Commerce and Management, Computer applications Information and Communication Technology General Essays, Corporate Communication, Soft Skills, Personality Development, Better Writing Skills etc. The students found these books very valuable and have started spending more number of hours in this Centre. For the benefit of the students this Centre is open from 8.00am to 08.00pm on all the working days. A special care is also taken to bring relevant study material for forthcoming competitive exams like DSC-2013, Staff Selection Commission-2013, APPSC Group-I and II-2013, Railway Recruitment Board Exams 2013 and IBPS Exams for the recruitment of clerks and officers in various nationalized banks, NDS, CDS etc.</p>
+   <br>
+   <div style="text-align: center;" class="jumbotron">
+    <h1>Remedial Coaching Schemes for SC-ST</h1>
+   </div>
+   The remedial coaching scheme is meant for those students belonging to marginalized social groups and is not able to cope up with regular class-room teaching and not so motivated. Under this scheme the University invited experts in the fields of Psychology, Personality Development, Leadership Development, Motivation, Self Assessment, Soft Skills and Corporate Communication. About 50 classes with huge gathering of students were done with experts like Dr. Swamy, Dr NB Sudhakar Reddy, Prof. Govinda Reddy (SVU), Prof. GV Ramana (SKU), Dr. Ramakant Sharma, Dr. K. Narasimha reddy, Mrs.S.Begum (trainee DSP), Kuppam, Dr. Ch Kondaiah, Director, Dr. Marri Chenna Reddy Institute of HRD. A Separate intensive session for personality and leaderships development to the students were organized . In this programme classes were conducted for each school by the experts in this field. Later the feedback also collected from the students which showed a positive attitude and motivation among many students.
+  </div>
+   
+    
+</div>
+  <div id="ugccell" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+        <h1>UGC Cell</h1>
+    </div>
+    <img src="images/ugc.jpg" class="img-thumbnail mx-auto d-block" alt="Cinque Terre" style="width: 200px;height: 200px;">
+    <p style="text-align:center;"><b> K.Shyamala </b><br>
+Coordinator, UGC & other funding agencies <br> 
+Phone : 94409 26992 <br>
+E-mail : shyamala.du@gmail.com 
+    </p>
+    <p style="text-align: center;">DUTIES AND RESPONSIBILITIES</p>
+    <p>
+      The office of the Coordinator, UGC Cell deal with the UGC Section of Dravidian University, Administration Office, where correspondence with the University Grants Commission, Department of Science & Technology, Department of Biotechnology, Indian Council for Medical Research, Department of Environment, Indian Council for Social Sciences etc., New Delhi for sanction and release of grants for implementing various Schemes/ Programmes of UGC and other agencies is made. The activities of the staff are dealing with in detail,  are as follows.
+    <br>
+    <ol> 
+<li>Major & Minor Research Projects (Undertaken by the University teachers)</li>
+<li>SAP and Non-SAP Programmes undertaken by the Departments in the  thrust area identified by U.G.C.</li>
+<li>ASIST Programmes undertaken by the Departments where SAP exists.</li>
+<li>Implementation of U.G.C. Schemes, like</li>
+<ul>
+<li>Children Day Care Centre</li> 
+<li>Equal Opportunity Cell</li>
+<li>Career and Counseling Cell</li>
+<li>UGC-NET Coaching</li>
+<li>UGC-Remedial Coaching</li>
+<li>UGC-Competitive Examinations coaching</li>
+<li>TEPSE/HEPSN (for disabled persons)</li>
+<li>Computer Upgradation</li>
+<li>Central Library</li>
+<li>Sports and Infrastructure Facilities</li>
+<li>Basic Facilities for Women</li>
+</ul>
+<li>Scholarships</li>
+<ul>
+<li>Rajiv Gandhi National Fellowship</li>
+<li>Science Meritorious Fellowship</li>
+<li>Telugu wordnet  and ILCI fellowships</li>
+</ul>
+<li>Emeritus Fellowship</li>
+<li>Research Awards</li>
+<li>Developmental Assistance for Equipment/Books & Journals/Buildings/Campus Development</li>
+<li>Unassigned grant for
+ravel Abroad/Within India to </li>
+<ul>
+<li>Tattend to International/National Conferences</li>
+<li>Guest Lectures</li>
+<li>Organization of Seminars</li>
+<li>Publication of Learned Research Work/Books</li>
+<li>Visiting Professorships / Visiting Fellowships</li>
+</ul>
+</ol>
+
+    </p>
+  </div>
+  <div id="ciqa" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+        <h1>Centre for Internal Quality Assurance (CIQA)</h1>
+    </div>
+    <p>In a ccordance with the guidelines of Distance Education Bureau (DEB) UGC, Centre for Internal Quality Assurance (CIQA) is established to develop and put in place a comprehensive and dynamic internal quality assurance system to provide high quality programmes of higher education in the open and Distance Learning mode.
+     <br>
+      Further, a Committee is constituted with the following members for the Centre for Internal Quality Assurance (CIQA).</p>
+      <table class="table table-dark table-striped">
+        <tr>
+          <td>1</td>
+          <td>Prof. D. Srinivas Kumar <br />
+            Dean, Academic Affairs         </td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Prof. G. L. Narayanappa <br/>
+          Head, Dept. of Commerce & Management and<br/>
+          Dean, School of Commerce & Management
+          </td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Prof. C. Varadarajulu Naidu <br />
+            Dept. of Biotechnology </td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Prof. B.Tirupati Rao<br />
+            Dept. of English & Communications</td>
+          <td>Member</td>
+        </tr>
+        
+        <tr>
+          <td>5</td>
+          <td>Prof. T.Anuradha<br />
+            Registrar</td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Dr.A.K.Venugopal Reddy<br />
+            Director I/c, DDE</td>
+          <td>Convener</td>
+        </tr>
+        
+      </table>
+      
+      </table>
+  </div>
+  <div id="aqar" class="tabcontent">
+    <div style="text-align: center;" class="jumbotron">
+        <h1>AQAR:2018-19</h1>
+    </div>
+    <embed src="doc/doc6.pdf" type="application/pdf"   width="100%" height="600px" />
+   </div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
