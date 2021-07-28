@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Facility</title>
+    <script src="https://kit.fontawesome.com/53bf2bdbc3.js" crossorigin="anonymous"></script>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Merienda', cursive;;
+    }
+        .top1{
+        display: flex;
+        
+        }
+        .logo{
+       flex-basis: 4%;
+       width: 130px;
+       float: left;
+       margin-left: 5px;
+       margin-top: 10px;
+        }
+        .start1 h1{
+        color: blue;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px;
+        }
+        .start1{
+        display: block;
+        margin-left: 22%;
+        }
+        .start1 h4{
+        text-align: center;
+        color: grey;
+        }
+        .start1 p{
+        text-align: center;
+        color: grey;
+        font-size: 17px;
+        }
+        .top2{
+            margin-top: 20px;
+        }
+        .top2 .nav-item{ 
+        font-size: 16px;
+        padding: 10px; 
+        }
+      .mega-menu{
+          width: 300px;
+          overflow: hidden;
+      }
+     .mega-menu  a{
+         text-decoration: none;
+         color: black;
+     }
+        @media screen and (max-width:700px) {
+           .mega-menu{
+    
+            width:200px;
+           }
+        } 
+        .card-footer{
+        text-align: center;
+        margin-top: 6%;
+    }
+    .main{
+      animation: fadeInLeft 6s;
+    }
+    @media screen and (max-width:800px) {
+    .start1 h1{
+        font-size: 20px;
+    }
+    .start1 h4,.start1 p{
+        font-size: 16px;
+    }
+    
+}
+    @keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+        </style>
+</head>
+<body>
+  <div class="top1">
+    <img src="logo.jpg" class="logo">
+    <div class="start1">
+        <h1> Srinivasa Education Institute</h1>
+        <H4> An Inter-State University</H4>
+        <p>(Accredited by NAAC with "B" Grade 9th place in Swachh Campus Ranking)</p>
+        </h1>
+    </div>
+</div>
+            <div class="top2">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                          <li class="nav-item">
+                            <a class="nav-link"  href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Administration</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Academics</a>
+                            </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarScrollingDropdown" data-bs-toggle="dropdown" >Facilities</a>
+                            <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><a href="library.html">University Library</a></p>
+                                        <p><a href="placement.html">Placement Cell</a></p>
+                                        <p><a href="hostelindex.html">University Hostels</a></p>
+                                        <p><a href="computercenter.html">Computer Center</a></p>
+                                        <p><a href="nccindex.html">NCC</a></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><a href="womencellindex.html">Women's Cell</a></p>
+                                        <p><a href="scstindex.html">SC/ST Cell</a></p>
+                                        <p><a href="nssindex.html">NSS</a></p>
+                                        <p><a href="otherFacilityindex.html">Other Facilites</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Journals</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">RTI-ACT</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="contactindex.html" id="navbarScrollingDropdown" data-bs-toggle="dropdown"   aria-current="page">
+                              Contact
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="layoutmaphtml.html">Layout Map</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="contactindex.html"> Contact</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>  
+            <div class="main">
+              <div class="sports" id="sec"style="text-align: center; margin-top: 10px;">
+                <h2 style="margin-top: 10px;">Sports</h2>
+                <img src="sports.jpg" style="margin-top: 10px;"class="img-fluid">
+                <p style="text-align: center;margin-top: 10px; line-height: 30px; letter-spacing: 2px; padding: 10px;">You do not have to be an athlete to get into college. Indeed, for a very small segment of the high school population, excelling in a sport, and thus being recruited to participate in intercollegiate sports, can and does translate into fantastic college opportunities, including, in some cases, scholarships.Students do not have to shy away from detailing these experiences and what they learned from them — they just have to shift the lens, add another layer, or approach these topics from creative perspectives to make them both original and reflective of a greater range of interests and talents. For example, maybe your experience diving for the ball as a volleyball player allowed you to take a risk in applying for the job of your dreams. Perhaps the qualities needed to be a good basketball player and also the skills needed to command a boardroom</p>
+              </div>
+              <div class="canteen" id="sec1"style="text-align: center; margin-top: 20px;">
+                <h2 style="margin-top: 10px;">Canteen</h2>
+                <img src="canteen.jpg" style="margin-top: 10px;" class="img-fluid">
+                <p style="text-align: center;margin-top: 15px; letter-spacing: 2px; padding: 10px; line-height: 30px;">The objective of the Canteen and meal service is to protect by reducing the risk of foodborne illness, with proper sanitary conditions, and preventing adulterated food. From the very beginning, the College Canteen has been functioning efficiently.The College canteen also caters to the functions organized in the college programmes like seminars, conferences and workshops.Kitchen staff takes care to provide the students and staff a nutritious and hygienic food at our campus canteens. A variety of hygienic food and snack items includes South and North Indian Meals, Variety Rice’s Chinese Foods Fresh Juices, etc.It has spacious & properly maintained room as well as kitchen; generally the college provides it to any individual on contract basis after proper official’s formalities.. Whether it is breakfast, lunch, a quick snack or a cup of coffee, the canteen is where you need to head. Conveniently located in the college quadrangle and just outside the main gate, the two canteens are easily accessible to staff and visitors as well. It is a pleasant sight to see students spread out across the quadrangle, enjoying their food in groups.</p>
+              </div>
+              <div class="transport" id="sec2"style="text-align: center; margin-top: 20px;">
+                <h2 style="margin-top: 10px;">Transport</h2>
+                <img src="transport.jpg" style="margin-top: 10px;" class="img-fluid">
+                <p style="text-align: center;margin-top: 15px; letter-spacing: 2px; padding: 10px; line-height: 30px;">A full fledged Transport department functions in the college with buses to provide transport facility to students and staff from various places. This service is offered ensuring a hassle-free and safe transportation.Besides the regular scheduled trips, the facility is extened for occassions after college hours likeSpecial Coaching Classes, NSS Camps, Hospitals , Placemet and Trainings.Every student is expected to avail the transport facility to enable him/her to be punctual to the college.Maintain strict discipline while traveling in the bus. Keep vigil over the senior students during the beginning of the year (after the first year classes are started) to prevent ragging in the bus. Any incident of ragging must be brought to the notice of concerned persons.Periodically check the students ID card to ensure that the students are traveling in the bus route allotted to them. In case of a need to go by a different route for any genuine reason, the student may be given permission.he staff in-charge of the buses (one teaching and one supporting) ensure the smooth functioning of the buses. The Transport committee meets once in Six months. </p>
+              </div>
+              <div class="hc" id="sec"style="text-align: center; margin-top: 20px;">
+                <h2 style="margin-top: 10px;">Health Center</h2>
+                <img src="health.jpg" style="margin-top: 10px;" class="img-fluid">
+                <p style="text-align: center;margin-top: 15px; letter-spacing: 2px; padding: 10px; line-height: 30px;">The Health Centre functions to provide immediate medicinal and first aid to all students and staff if the situation arises. The Health Centre is well equipped with respect to the availability of basic health related facilities like thermometer, sterilizer, auto-clave, dressing drum, weight measuring machine, B. P. Apparatus, patient bed and stretcher etc.Regular Health Checkup camps are organized with active support from hospitals and Medical Colleges in the city.In case of complications, the patients are referred to nearby nursery home or hospitals.Transportation is ready 24×7 for students’ care.The demands on health centers are greater and more complex than ever. More students today come to campus with significant health needs, including mental health challenges.Health centers also get involved in headline-making issues of campus safety. All of these demands are converging at a time when health-care providers and society in general are increasingly aware of the value of prevention and healthy lifestyles. The mission of health centers is being redefined to include not just treating medical problems but also managing serious chronic conditions and promoting healthy habits.</p>
+            </div>
+               <div class="wifi" id="sec"style="text-align: center; margin-top: 20px;">
+                <h2 style="margin-top: 10px;">Wifi</h2>
+                <img src="wifi.jpg" style="margin-top: 10px;" class="img-fluid">
+                <p style="text-align: center;margin-top: 15px; letter-spacing: 2px; padding: 10px; line-height: 30px;">The entire campus is Wi-fi enabled with high speed internet connection to allow the students to access the internet no-matter wherever they are. The coverage is not just limited to the classrooms, instead it extends to all the facilities within the campus premises. Staff and Students are informed to utilize the Wi-Fi Facility by Registering their i-connect devices for the active usage of the facility.This includes Internet Facilities available through leased line and Wi-Fi for providing continuous and uninterrupted internet connectivity to students and faculty members. These facilities are also available to students beyond college hours for preparation of seminars & projects and research-orientated work. The entire campus including the hostels is Wi-Fi enabled and students can access the internet on their laptops round the clock.We have local area wireless technology which allows an electronic device to exchange data or connect to internet using 12MBPS in our college campus and in UG and PG hostel.</p>
+            </div>
+            </div>
+            <div class="card-footer text-danger">
+              Copyright © 2021 Srinivasa Education Institute. All rights reserved.
+          </div> 
+</body>
+</html>
