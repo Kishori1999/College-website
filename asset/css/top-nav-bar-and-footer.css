@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff url("../images/bg_pattern.gif");
+  font-family: Arial, Helvetica, sans-serif, Calibri;
+  font-size: 14px;
+  color: #353535;
+  width: 914px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  background-color: #fff;
+}
+.logo-content {
+  padding-bottom: 5px;
+}
+.logo {
+  width: 287px;
+  height: 70px;
+}
+.logo-content a {
+  display: inline-block;
+}
+
+.logo-content p {
+  font-weight: bold;
+  width: 287px;
+  text-align: center;
+  display: block;
+}
+
+.top-nav-bar {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0084ff;
+}
+
+.top-nav-bar a {
+  flex-grow: 1;
+  display: block;
+  padding: 13px 10px;
+  border-right: 1px solid #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.top-nav-bar a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+footer {
+  width: 100%;
+  background-color: #0084ff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+footer h3 {
+  font-size: 16px;
+  font-weight: normal;
+}
+footer p {
+  font-size: 14px;
+  text-indent: unset;
+}

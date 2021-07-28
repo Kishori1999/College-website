@@ -1,47 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #fff url("../../images/RTI-ACT/bg_pattern.gif");
-  font-family: Arial, Helvetica, sans-serif, Calibri;
-  font-size: 14px;
-  color: #353535;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-  color: #fff;
-}
-
 main {
   display: flex;
-  justify-content: center;
-}
-
-@media screen and (max-width: 914px) {
-  main {
-    justify-content: unset;
-  }
+  min-height: 491px;
 }
 
 .side-nav-bar {
   background-color: #0084ff;
   flex: 0 0 180px;
+  line-height: 165%;
 }
 .side-nav-bar a {
   display: block;
   padding-left: 20px;
   margin-bottom: 2px;
-  font-size: 15px;
+  font-size: 14px;
   color: #fff;
 }
 .side-nav-bar a.current,
 .side-nav-bar a:hover {
-  background: #933 url("../../images/RTI-ACT/vert-one_arrow.gif") no-repeat 0
+  background: #933 url("../images/side-nav-bar/vert-one_arrow.gif") no-repeat 0
     9px;
 }
 
@@ -64,6 +40,12 @@ main {
 
 .content h2 {
   color: #0083ff;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.content h3 {
   font-weight: bold;
   font-size: 16px;
   font-family: "Times New Roman", Times, serif;
