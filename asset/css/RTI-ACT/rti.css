@@ -1,0 +1,25 @@
+table {
+  width: 100%;
+  border: 1px solid #000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+td {
+  min-width: 25px;
+  border: 1px solid #000;
+  padding: 10px 2px;
+  vertical-align: middle;
+}
+
+td:nth-child(2) {
+  width: 197px;
+}
+
+td:nth-child(3) {
+  width: 191px;
+}
+
+.headings {
+  font-weight: bold;
+  color: #cc3333;
+  text-align: center;
+}
