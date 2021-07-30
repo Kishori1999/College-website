@@ -1,198 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FacilityHtml</title>
     <link rel="stylesheet" href="facilitystyle.css">
     <script src="https://kit.fontawesome.com/53bf2bdbc3.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  </head>
+
+  <body>
     <div class="top1">
-        <img src="logo.jpg" class="logo">
-        <div class="start1">
-            <h1> Srinivasa Education Institute</h1>
-            <H4> An Inter-State University</H4>
-            <p>(Accredited by NAAC with "B" Grade 9th place in Swachh Campus Ranking)</p>
-            </h1>
-        </div>
+      <img src="logo.jpg" class="logo">
+      <div class="start1">
+        <h1> Srinivasa Education Institute</h1>
+        <H4> An Inter-State University</H4>
+        <p>(Accredited by NAAC with "B" Grade 9th place in Swachh Campus Ranking)</p>
+        </h1>
+      </div>
     </div>
-            <div class="top2">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                          <li class="nav-item">
-                            <a class="nav-link"  href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Administration</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Academics</a>
-                            </li>
-                          <li class="nav-item dropdown" id="myTopnav">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" data-bs-toggle="dropdown" >Facilities</a>
-                            <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <p><a href="#library" onclick="dis()">University Library</a></p>
-                                        <p><a href="#computer"onclick="dis1()">Computer Center</a></p>
-                                        <p><a href="#hostel"onclick="dis2()">University Hostels</a></p>
-                                        <p><a href="#ncc"onclick="dis3()">NCC</a></p>
-                                        <p><a href="#placement"onclick="dis4()">Placement Cell</a></p>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <p><a href="#scst"onclick="dis5()">SC/ST Cell</a></p>
-                                        <p><a href="#women"onclick="dis6()">Women's Cell</a></p>
-                                        <p><a href="#nss"onclick="dis7()">NSS</a></p>
-                                        <p><a href="#others"onclick="dis8()">Other Facilites</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Journals</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">RTI-ACT</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="contactindex.html">Contact</a>
-                          </li>
-                          
-                        </ul>
-                      </div>
+    <div class="top2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                  data-bs-toggle="dropdown">About Us</a>
+                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><a href="../index and about us/Objective.html">Objectives</a></p>
+                      <p><a href="../index and about us/Vission and Mission.html">Vision & Mission</a></p>
+                      <p><a href="../index and about us/Core values.html">Core Values</a></p>
+                      <p><a href="../index and about us/University Profile.html">University Profile</a></p>
                     </div>
-                  </nav>
-            </div>  
-            <div class="main">
-              <div class="card-group">
-                <div class="card" id="library">
-                  <a href="library.html"><img src="lib4.jpg" style="height: 35vh;"class="card-img-top" alt="..."></a>
-                  <div class="card-body">
-                    <h5 class="card-title">University Library</h5>
+                    <div class="col-md-6">
+                      <p><a href="../index and about us/Our Logo.html">Our Logo</a></p>
+                      <p><a href="../index and about us/Successive Vice-Chancellors.html">Successive
+                          Vice-Chancellors</a></p>
+                      <p><a href="../index and about us/Organogram.html">Organogram</a></p>
+                      <p><a href="../index and about us/Newsletter.html">Newsletter</a></p>
+                    </div>
                   </div>
                 </div>
-                <div class="card" id="computer">
-                  <a href="computercenter.html"> <img src="c lab1.jpg" style="height: 35vh;"class="card-img-top" alt="..."></a>
-                  <div class="card-body">
-                    <h5 class="card-title">Computer Center</h5>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                  data-bs-toggle="dropdown">Administration</a>
+                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><a href="#">Vice-Chancellor</a></p>
+                      <p><a href="#">Rector</a></p>
+                      <p><a href="#">Registrar</a></p>
+                      <p><a href="#">Executive Council</a></p>
+                    </div>
+                    <div class="col-md-6">
+                      <p><a href="#">Academic Senate</a></p>
+                      <p><a href="#">Dean Academics</a></p>
+                      <p><a href="#">Other Administrators</a></p>
+                      <p><a href="#">Committee for Regulations</a></p>
+                    </div>
                   </div>
                 </div>
-                </div>
-                <div class="card-group">
-                  <div class="card" id="hostel">
-                    <a href="hostelindex.html"><img src="hostel.jpg" style="height: 35vh;"class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                      <h5 class="card-title"> University Hostels</h5>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                  data-bs-toggle="dropdown">Acedemics</a>
+                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><a href="../Academics/Academics.html#school">Schools and Departments</a></p>
+                      <p><a href="../Academics/Academics.html#deans">Deans of Various Schools</a></p>
+                      <p> <a href="../Academics/Academics.html#head">Head of the Departments</a></p>
+                      <p><a href="../Academics/Academics.html#academic">Academic Calender</a></p>
+                      <p><a href="../Academics/Academics.html#board">Board of Studies</a></p>
+                      <p><a href="../Academics/Academics.html#best">Best Practices</a></p>
                     </div>
-                  </div>
-                  <div class="card" id="ncc">
-                    <a href="nccindex.html"> <img src="nccbg1.jpg" style="height: 35vh;"class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                      <h5 class="card-title">NCC</h5>
+                    <div class="col-md-6">
+                      <p><a href="../Academics/Academics.html#iqac">IQAC</a></p>
+                      <p><a href="../Academics/Academics.html#ugccoaching">UGC Coaching Schemes</a></p>
+                      <p><a href="../Academics/Academics.html#ugccell">UGC Cell</a></p>
+                      <p><a href="../Academics/Academics.html#ciqa">CIQA</a></p>
+                      <p><a href="../Academics/Academics.html#aqar">AQAR:2018-19</a></p>
                     </div>
-                  </div>
-                  </div>
-                  <div class="card-group">
-                    <div class="card" id="placement">
-                      <a href="placement.html"><img src="place.png" style="height: 35vh;"class="card-img-top" alt="..."></a>
-                      <div class="card-body">
-                        <h5 class="card-title">Placement</h5>
-                      </div>
-                    </div>
-                    <div class="card" id="scst">
-                      <a href="scstindex.html"> <img src="stsc.png" style="height: 35vh;"class="card-img-top" alt="..."></a>
-                      <div class="card-body">
-                        <h5 class="card-title">SC/ST Cell</h5>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="card-group">
-                      <div class="card" id="women">
-                        <a href="womencellindex.html"><img src="womencell.jpg" style="height: 35vh;"class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                          <h5 class="card-title">Women Cell</h5>
-                        </div>
-                      </div>
-                      <div class="card" id="nss">
-                        <a href="nssindex.html"> <img src="nssbg.jpg" style="height: 35vh;"class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                          <h5 class="card-title">NSS</h5>
-                        </div>
-                      </div>
-                      </div>
-                      <div class="card-group">
-                        <div class="card" id="others">
-                          <a href="otherFacilityindex.html"><img src="canteen.jpg" style="height: 35vh;"class="card-img-top" alt="..."></a>
-                          <div class="card-body">
-                            <h5 class="card-title"> Others</h5>
-                          </div>
-                        </div>
-              </div>
-              <div class="footers1">
-                <div class="d-grid gap-1 col-2 mx-auto">
-                  <button class="btn btn-primary" type="button"><a href="contactindex.html">Contact</a></button>
                   </div>
                 </div>
-              <div class="card-footer text-danger">
-                Copyright © 2021 Srinivasa Education Institute. All rights reserved.
-            </div> 
-            <script>
-              function myFunction() {
-                var list=document.getElementById("myTopnav").classList.toggle("show");
-                console.log(list);
-  }
-  function dis(){
-    var intro1=document.querySelector("#library");
-    intro1.classList.add("mall");
-  }
-  function dis1(){
-    var intro2=document.querySelector("#computer");
-    intro2.classList.add("mall1");
-  }
-  function dis2(){
-    var intro3=document.querySelector("#hostel");
-    intro3.classList.add("mall2");
-  }
-  function dis3(){
-    var intro4=document.querySelector("#ncc");
-    intro4.classList.add("mall3");
-  }
-  function dis4(){
-    var intro4=document.querySelector("#placement");
-    intro4.classList.add("mall4");
-  }
-  function dis5(){
-    var intro5=document.querySelector("#scst");
-    intro5.classList.add("mall5");
-  }
-  function dis6(){
-    var intro6=document.querySelector("#women");
-    intro6.classList.add("mall6");
-  }
-  function dis7(){
-    var intro7=document.querySelector("#nss");
-    intro7.classList.add("mall7");
-  }
-  function dis8(){
-    var intro8=document.querySelector("#others");
-    intro8.classList.add("mall8");
-  }
-            </script>
-</body>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown"
+                  data-bs-toggle="dropdown">Facilities</a>
+                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><a href="../facility and contact/library.html">University Library</a></p>
+                      <p><a href="../facility and contact/computercenter.html">Computer Centre</a></p>
+                      <p><a href="../facility and contact/hostelindex.html">University Hostels</a></p>
+                      <p><a href="../facility and contact/placement.html">Placement Cell</a></p>
+                      <p><a href="../facility and contact/nccindex.html">NCC</a></p>
+                    </div>
+                    <div class="col-md-6">
+                      <p><a href="../facility and contact/scstindex.html">SC/ST Cell</a></p>
+                      <p><a href="../facility and contact/nssindex.html">NSS</a></p>
+                      <p><a href="../facility and contact/womencellindex.html">Women's Cell</a></p>
+                      <p><a href="../facility and contact/otherFacilityindex.html">Other Facilities</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                  data-bs-toggle="dropdown">Admission</a>
+                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><a href="../admissions/UnderGraduate.html">Under-Graduate</a></p>
+                      <p><a href="../admissions/PostGraduate.html">Post Graduate</a></p>
+                      <p><a href="../admissions/ResearchPrograms.html">Research Programmes</a></p>
+                    </div>
+                    <div class="col-md-6">
+                      <p> <a href="#">DUCT-2020-21 Admission Notification</a></p>
+                      <p> <a href="#">DUCET-2020-21 Application</a></p>
+                      <p> <a href="#">DUCET-2020-21 Prospectus (Revised)</a></p>
+                      <p><a href="#">Hostel Manual</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                  data-bs-toggle="dropdown">Journals</a>
+                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><a href="../journals/journal.html">Dravidian Studies : (A Quarterly Research journal)</a></p>
+                    </div>
+                    <div class="col-md-6">
+                      <p> <a href="../journals/journal.html">Contentions: Journal of English and Translation Studies
+                          (Bi-Annual)</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                  data-bs-toggle="dropdown">RTI-ACT</a>
+                <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><a href="../RTI-ACT/particulars.html">Particulars</a></p>
+                      <p><a href="../RTI-ACT/power_and_duties.html">Power and Duties</a></p>
+                      <p><a href="../RTI-ACT/decision_making.html">Decision Making Process</a></p>
+                      <p><a href="../RTI-ACT/rules_regulations.html">Rules, Regulations etc</a></p>
+                      <p><a href="../RTI-ACT/executive-council.html">Executive Council</a></p>
+                      <p><a href="../RTI-ACT/board_council_commitee.html">Boards, Council and Committees</a></p>
+                    </div>
+                    <div class="col-md-6">
+                      <p><a href="../RTI-ACT/officers_employees.html">Directory of its officers and employees</a></p>
+                      <p> <a href="../RTI-ACT/renumeration.html">Renumeration</a></p>
+                      <p> <a href="../RTI-ACT/budget.html">Budget Allocations</a></p>
+                      <p> <a href="../RTI-ACT/subsidy_programs.html">Subsidy Programme</a></p>
+                      <p> <a href="../RTI-ACT/rti.html">Public Information Officers</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarScrollingDropdown" data-bs-toggle="dropdown"
+                  aria-current="page">
+                  Contact
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../facility and contact/layoutmaphtml.html">Layout Map</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="../facility and contact/contactindex.html"> Contact</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="card-group">
+        <div class="card" id="library">
+          <a href="library.html"><img src="lib4.jpg" style="height: 35vh;" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">University Library</h5>
+          </div>
+        </div>
+        <div class="card" id="computer">
+          <a href="computercenter.html"> <img src="c lab1.jpg" style="height: 35vh;" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Computer Center</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card" id="hostel">
+          <a href="hostelindex.html"><img src="hostel.jpg" style="height: 35vh;" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title"> University Hostels</h5>
+          </div>
+        </div>
+        <div class="card" id="ncc">
+          <a href="nccindex.html"> <img src="nccbg1.jpg" style="height: 35vh;" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">NCC</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card" id="placement">
+          <a href="placement.html"><img src="place.png" style="height: 35vh;" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Placement</h5>
+          </div>
+        </div>
+        <div class="card" id="scst">
+          <a href="scstindex.html"> <img src="stsc.png" style="height: 35vh;" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">SC/ST Cell</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card" id="women">
+          <a href="womencellindex.html"><img src="womencell.jpg" style="height: 35vh;" class="card-img-top"
+              alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Women Cell</h5>
+          </div>
+        </div>
+        <div class="card" id="nss">
+          <a href="nssindex.html"> <img src="nssbg.jpg" style="height: 35vh;" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">NSS</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card" id="others">
+          <a href="otherFacilityindex.html"><img src="canteen.jpg" style="height: 35vh;" class="card-img-top"
+              alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title"> Others</h5>
+          </div>
+        </div>
+      </div>
+      <div class="footers1">
+        <div class="d-grid gap-1 col-2 mx-auto">
+          <button class="btn btn-primary" type="button"><a href="contactindex.html">Contact</a></button>
+        </div>
+      </div>
+      <div class="card-footer text-danger">
+        Copyright © 2021 Srinivasa Education Institute. All rights reserved.
+      </div>
+      <script>
+        function myFunction() {
+          var list = document.getElementById("myTopnav").classList.toggle("show");
+          console.log(list);
+        }
+
+        function dis() {
+          var intro1 = document.querySelector("#library");
+          intro1.classList.add("mall");
+        }
+
+        function dis1() {
+          var intro2 = document.querySelector("#computer");
+          intro2.classList.add("mall1");
+        }
+
+        function dis2() {
+          var intro3 = document.querySelector("#hostel");
+          intro3.classList.add("mall2");
+        }
+
+        function dis3() {
+          var intro4 = document.querySelector("#ncc");
+          intro4.classList.add("mall3");
+        }
+
+        function dis4() {
+          var intro4 = document.querySelector("#placement");
+          intro4.classList.add("mall4");
+        }
+
+        function dis5() {
+          var intro5 = document.querySelector("#scst");
+          intro5.classList.add("mall5");
+        }
+
+        function dis6() {
+          var intro6 = document.querySelector("#women");
+          intro6.classList.add("mall6");
+        }
+
+        function dis7() {
+          var intro7 = document.querySelector("#nss");
+          intro7.classList.add("mall7");
+        }
+
+        function dis8() {
+          var intro8 = document.querySelector("#others");
+          intro8.classList.add("mall8");
+        }
+      </script>
+  </body>
+
 </html>
