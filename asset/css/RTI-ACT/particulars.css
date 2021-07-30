@@ -1,7 +1,11 @@
+.content {
+  background-color: #fff;
+  padding: 20px 60px;
+}
 .content p,
 .content ol li {
   color: #0a0a0a;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   text-align: justify;
   font-family: "Times New Roman", Times, serif;

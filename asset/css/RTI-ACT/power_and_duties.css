@@ -1,3 +1,7 @@
+.content {
+  background-color: #fff;
+  padding: 20px 60px;
+}
 .content p,
 .content li {
   color: #0a0a0a;
