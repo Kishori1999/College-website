@@ -6,11 +6,11 @@
 
 body {
   background: #fff url("../images/bg_pattern.gif");
-  font-family: Arial, Helvetica, sans-serif, Calibri;
-  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   color: #353535;
-  width: 914px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -21,11 +21,16 @@ a:visited {
 }
 
 header {
-  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  z-index: 2;
 }
-.logo-content {
-  padding-bottom: 5px;
-}
+
+/* --------------------------------------- Logo CSS ------------------------------------- */
 .logo {
   width: 287px;
   height: 70px;
@@ -34,38 +39,147 @@ header {
   display: inline-block;
 }
 
-.logo-content p {
-  font-weight: bold;
-  width: 287px;
-  text-align: center;
-  display: block;
-}
-
+/* --------------------------------------- Top Nav Bar ---------------------------------- */
 .top-nav-bar {
+  height: 100%;
   display: flex;
-  height: 40px;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #0084ff;
+  background-color: transparent;
 }
 
-.top-nav-bar a {
+header.opaque {
+  background-color: #353535;
+}
+
+.icon {
+  display: none;
+  cursor: pointer;
+}
+
+.icon .bar1,
+.icon .bar2,
+.icon .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #f1f1f1;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.icon.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.icon.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.icon.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.top-nav-bar .top-nav-bar-links {
   flex-grow: 1;
   display: block;
-  padding: 13px 10px;
-  border-right: 1px solid #fff;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 }
 
-.top-nav-bar a:hover {
-  color: #000;
-  background-color: #fff;
+.top-nav-bar .top-nav-bar-links.current {
+  border-bottom: 1px solid #fff;
+}
+
+.top-nav-bar .top-nav-bar-links:not(.current) .dropdown-header:hover {
+  animation: scale-up 0.6s forwards;
+  cursor: default;
+}
+
+.top-nav-bar-links .dropdown-header {
+  color: #fff;
+  padding: 15px 10px 20px;
+  white-space: nowrap;
+}
+
+.top-nav-bar-links .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  left: -100px;
+  z-index: 1;
+}
+
+.top-nav-bar-links:hover .dropdown-content {
+  display: flex;
+  padding: 15px 10px 10px 5px;
+}
+
+.top-nav-bar-links .dropdown-content .left-column {
+  width: 160px;
+  padding: 0 10px 0 15px;
+  border-right: 1px dotted #c1c1c1;
+}
+.top-nav-bar-links .dropdown-content .right-column {
+  width: 160px;
+  padding: 0 15px 0 10px;
+}
+
+.top-nav-bar-links .dropdown-content a {
+  color: black;
+  display: block;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  padding: 5px 0 7px;
+  border-bottom: 1px dotted #c1c1c1;
+}
+.top-nav-bar-links .dropdown-content a:hover {
+  color: #ce1d77;
+}
+
+@media screen and (max-width: 850px) {
+  header .icon {
+    display: inline-block;
+    margin: auto 20px;
+  }
+  .icon.change {
+    position: relative;
+    z-index: 2;
+  }
+  .top-nav-bar {
+    display: none;
+    position: absolute;
+    right: 25px;
+    padding-top: 10px;
+  }
+  .top-nav-bar.show .top-nav-bar-links {
+    background-color: #343535;
+  }
+  .top-nav-bar.show {
+    display: block;
+  }
+  .dropdown-content {
+    left: unset !important;
+    right: 155px;
+  }
+}
+
+main {
+  position: relative;
+  padding-top: 70px;
+  flex-grow: 1;
 }
 
 footer {
-  width: 100%;
-  background-color: #0084ff;
+  background-color: #343535;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -79,4 +193,13 @@ footer h3 {
 footer p {
   font-size: 14px;
   text-indent: unset;
+}
+
+@keyframes scale-up {
+  50% {
+    transform: scale(1.1, 1.05);
+  }
+  100% {
+    transform: scale(1.05, 1);
+  }
 }

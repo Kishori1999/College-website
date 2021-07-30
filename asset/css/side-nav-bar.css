@@ -1,34 +1,43 @@
-main {
+.side-nav-bar {
+  width: 180px;
+  height: 100vh;
   display: flex;
-  min-height: 491px;
+  position: fixed;
+  flex-direction: column;
+  background-color: #313131;
 }
 
-.side-nav-bar {
-  background-color: #0084ff;
-  flex: 0 0 180px;
-  line-height: 165%;
-}
 .side-nav-bar a {
   display: block;
+  margin-top: 20px;
   padding-left: 20px;
-  margin-bottom: 2px;
-  font-size: 14px;
-  color: #fff;
+  padding-bottom: 2px;
+  font-size: 16px;
+  color: #818181;
 }
+
 .side-nav-bar a.current,
 .side-nav-bar a:hover {
+  color: #fff;
   background: #933 url("../images/side-nav-bar/vert-one_arrow.gif") no-repeat 0
     9px;
 }
 
 .side-nav-bar a:not(.current):hover {
-  background-color: #000;
+  animation: scale-up 0.6s;
+}
+
+@keyframes scale-up {
+  50% {
+    transform: scale(1.05, 1.05);
+  }
 }
 
 .content {
-  background-color: #fff;
-  padding: 20px 40px 100px;
-  flex: 0 0 734px;
+  margin-left: 180px;
+  background-color: transparent;
+  padding: 20px 40px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .content h1 {
@@ -36,17 +45,16 @@ main {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 .content h2 {
   color: #0083ff;
   font-weight: bold;
   font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .content h3 {
   font-weight: bold;
   font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
 }
