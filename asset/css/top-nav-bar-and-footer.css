@@ -45,9 +45,15 @@ header.opaque {
 }
 
 .logo-content .logo {
-  max-width: 90px;
-  height: 100px;
+
   margin-right: 2%;
+  margin-left:2%;
+     min-height: 80px;
+  min-width: 80px;
+
+  height: 7%;
+  width: 7%;
+  border-radius: 50%;
 }
 @media screen and (max-width: 500px) {
   .logo {
