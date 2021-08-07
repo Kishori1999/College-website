@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="postgradute.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="images/Logo.jpeg" alt="logo"  style="width:40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"  style="color:white;"> <a class="nav-link" href="../index.html">Home</a> </li>
+     
+
+        <li class="nav-item" style="color:white;"> <a class="nav-link" href="../index and about us/Objective.html">About
+                Us</a> </li>
+  
+        <li class="nav-item"  style="color:white;"> <a class="nav-link" href="../Administration/Administration.html#vice">Adminstration</a>
+        </li>
+  
+        <li class="nav-item" style="color:white;"> <a class="nav-link" href="../Academics/Academics.html#school">Academics</a>
+        </li>
+  
+        <li class="nav-item"  style="color:white;"> <a class="nav-link" href="../facility and contact/library.html">Facilities</a>
+        </li>
+  
+        <li class="nav-item" style="color:white;"> <a class="nav-link" href="../admissions/UnderGraduate.html">Admission</a>
+        </li>
+  
+        <li class="nav-item" style="color:white;"> <a class="nav-link" href="../journals/journal.html">Journals</a>
+        </li>
+  
+        <li class="nav-item" style="color:white;"> <a class="nav-link" href="../RTI-ACT/particulars.html">RTI-ACT</a>
+        </li>
+  
+        <li class="nav-item"  style="color:white;"> <a class="nav-link" href="../facility and contact/contactindex.html">Contact
+                Us</a> </li>
+                <li class="nav-item" style="color:white;"> <a class="nav-link" href="">Postgradute</a>
+                </li>
+      </ul>
+    </div>  
+  </nav>
+  <div  style="background-image:url('images/background.jpg'); width: 100%; height: 400px; background-size: 100% 100%; border: 1px solid red;">
+  </div>
+  <br>
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+          <h3>Our Program</h3>
+      </div>
+
+      <ul class="list-unstyled components my-2 my-sm-0" style="float: right;"  >
+          <li class="active">
+            <a href="intermediate.html">Intermediate Program</a>  
+          </li>
+          <li>
+            <a href="gradute.html">Graduate program</a>  
+          </li>
+         
+      </ul>
+  </nav>
+  
+    <div id="content">
+    <button type="button" id="sidebarCollapse" class="navbar-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+    <div style="text-align: center;" class="jumbotron">
+        <h1>Gradute Program</h1>
+      </div>
+       
+      </div> 
+</div>
+
+<div class="footer">
+  <p>Copyright © 2016 All Rights reserved by:Web Student</p>
+</div>
+
+<script>
+  $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+          $('#sidebar').toggleClass('active');
+          $(this).toggleClass('active');
+      });
+  });
+  </script>       
+  </body>
+  </html>
