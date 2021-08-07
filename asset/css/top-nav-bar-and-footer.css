@@ -21,38 +21,49 @@ a:visited {
 }
 
 header {
-  height: 70px;
+  height: 100px;
   width: 100%;
   position: fixed;
   display: flex;
+  column-gap: 50px;
   justify-content: space-between;
   background-color: transparent;
   z-index: 2;
 }
 
-/* --------------------------------------- Logo CSS ------------------------------------- */
-.logo {
-  width: 287px;
-  height: 70px;
-}
-.logo-content a {
-  display: inline-block;
-}
-
-/* --------------------------------------- Top Nav Bar ---------------------------------- */
-.top-nav-bar {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-}
-
 header.opaque {
   background-color: #353535;
 }
+@media screen and (max-width: 500px) {
+  header {
+    column-gap: 0;
+  }
+}
+/* --------------------------------------- Logo CSS ------------------------------------- */
+.logo-content a {
+  display: flex;
+}
 
+.logo-content .logo {
+  max-width: 90px;
+  height: 100px;
+  margin-right: 2%;
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+}
+.clg-name h1 {
+  max-height: 80px;
+}
+
+.clg-name p {
+  font-size: 20px;
+  max-height: 20px;
+}
+
+/* --------------------------------------- Triple Bar ---------------------------------- */
 .icon {
   display: none;
   cursor: pointer;
@@ -85,12 +96,29 @@ header.opaque {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.top-nav-bar .top-nav-bar-links {
+/* --------------------------------------- Top Nav Bar ---------------------------------- */
+.top-nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.top-nav-bar .group {
+  display: flex;
   flex-grow: 1;
+  justify-content: center;
+  height: 50px;
+}
+
+.top-nav-bar .top-nav-bar-links {
   display: block;
   text-align: center;
   text-transform: uppercase;
   position: relative;
+  height: 45px;
+  margin-bottom: 5px;
 }
 
 .top-nav-bar .top-nav-bar-links.current {
@@ -99,13 +127,14 @@ header.opaque {
 
 .top-nav-bar .top-nav-bar-links:not(.current) .dropdown-header:hover {
   animation: scale-up 0.6s forwards;
-  cursor: default;
 }
 
 .top-nav-bar-links .dropdown-header {
   color: #fff;
-  padding: 15px 10px 20px;
+  padding: 12px 10px;
+  line-height: 20px;
   white-space: nowrap;
+  cursor: default;
 }
 
 .top-nav-bar-links .dropdown-content {
@@ -122,14 +151,11 @@ header.opaque {
   padding: 15px 10px 10px 5px;
 }
 
-.top-nav-bar-links .dropdown-content .left-column {
+.top-nav-bar-links .dropdown-content .left-column,
+.top-nav-bar-links .dropdown-content .right-column {
   width: 160px;
   padding: 0 10px 0 15px;
   border-right: 1px dotted #c1c1c1;
-}
-.top-nav-bar-links .dropdown-content .right-column {
-  width: 160px;
-  padding: 0 15px 0 10px;
 }
 
 .top-nav-bar-links .dropdown-content a {
@@ -157,25 +183,40 @@ header.opaque {
   .top-nav-bar {
     display: none;
     position: absolute;
+    top: 75px;
     right: 25px;
     padding-top: 10px;
-  }
-  .top-nav-bar.show .top-nav-bar-links {
     background-color: #343535;
   }
   .top-nav-bar.show {
     display: block;
   }
+  .top-nav-bar.show .group {
+    display: block;
+    height: unset;
+  }
   .dropdown-content {
+    top: 0;
     left: unset !important;
     right: 155px;
   }
 }
 
+@media screen and (max-width: 500px) {
+  header {
+    background-color: #00000045;
+  }
+  .top-nav-bar-links:hover .dropdown-content {
+    display: block;
+  }
+}
+
 main {
   position: relative;
-  padding-top: 70px;
+  margin-top: 100px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
