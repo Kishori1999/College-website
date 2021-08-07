@@ -1,0 +1,33 @@
+body{
+  background:#f3c538;
+}
+.Join-Form .panel-default{
+  padding: 31%;
+ padding-top: 10%;}
+
+.Join-Form .panel-body{
+  padding: 15%;
+  margin-bottom: -50%;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img{
+  width:40%;
+  margin-bottom:10%;
+}
+.btnjoin{
+  background: #c0392b;
+  border:none;
+}
+
+
+.footer { margin: 2px;
+  height: 60px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
