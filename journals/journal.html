@@ -1,186 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0 ;font-family:Arial}
 
-  <head>
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  z-index: 9999;
+  width: 100%;
+ 
+ 
+}
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="../asset/css/top-nav-bar-and-footer.css">
-    <link rel="stylesheet" href="../asset/css/side-nav-bar.css">
-    <title>Journals Page</title>
-  </head>
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+  font-size: 17px;
+  
 
-  <body>
-    <!-- Top Navigation Bar -->
-    <header id="header">
-      <div class="logo-content">
-        <a href="../index.html"><img class="logo" src="../asset/images/logo.jpg" /></a>
-      </div>
-      <div class="icon" onclick="toggleNavBar(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      </div>
-      <nav class="top-nav-bar" id="topNavBar">
-        <div class="top-nav-bar-links">
-          <div class="dropdown-header"><a href="../index.html">Home</a></div>
-        </div>
+  
+}
 
-        <div class="top-nav-bar-links">
-          <div class="dropdown-header">About Us</div>
-          <div class="dropdown-content">
-            <div class="left-column">
-              <a href="../index and about us/Objective.html">Objectives</a>
+.active {
+  background-color: #04AA6D;
+  color: white;
+   border-radius: 50%;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+ overflow: hidden;
+ }
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+
+    text-align: left;
+  }
+}
+</style>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  background-color: #111;
+ 
+  padding-top: 1%;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 50px 4px 3px 8px;
+  text-decoration: none;
+  font-size: 100%;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 80%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 20%; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px;
+
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color:black;
+  color: white;
+  height: 7%;
+	width: 7%;
+	border-radius: 50%;
+	padding: 0;
+	
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 18px;}
+}
+
+img{
+	
+	border-radius: 50%;
+	min-height: 80px;
+	min-width: 80px;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+}
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active" ><img src="images/Logo.jpeg" width="100%"  height="100%" z-index="1" border-radius:"50%" /></a>
+  <div class="dropdown">
+    <button class="dropbtn">ABOUT US 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     <a href="../index and about us/Objective.html">Objectives</a>
               <a href="../index and about us/Vission and Mission.html">Vision & Mission</a>
               <a href="../index and about us/Core values.html">Core Values</a>
               <a href="../index and about us/University Profile.html">University Profile</a>
-            </div>
-            <div class="right-column">
-              <a href="../index and about us/Our Logo.html">Our Logo</a>
-              <a href="../index and about us/Successive Vice-Chancellors.html">Successive
-                Vice-Chancellors</a>
+      <a href="../index and about us/Our Logo.html">Our Logo</a>
+      <a href="../index and about us/Successive Vice-Chancellors.html">Successive Vice-Chancellors</a>
               <a href="../index and about us/Organogram.html">Organogram</a>
               <a href="../index and about us/Newsletter.html">Newsletter</a>
-            </div>
-          </div>
-        </div>
-        <div class="top-nav-bar-links">
-          <div class="dropdown-header">Administration</div>
-          <div class="dropdown-content">
-            <div class="left-column">
-              <a href="../Administration/Administration.html#vice">Vice-Chancellor</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">ADMINISTRATION 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+         <a href="../Administration/Administration.html#vice">Vice-Chancellor</a>
               <a href="../Administration/Administration.html#rector">Rector</a>
               <a href="../Administration/Administration.html#registrar">Registrar</a>
               <a href="../RTI-ACT/executive-council.html">Executive Council</a>
-            </div>
-            <div class="right-column">
               <a href="../Administration/Administration.html#senate">Academic Senate</a>
               <a href="../Administration/Administration.html#dean">Dean Academics</a>
               <a href="../Administration/Administration.html#other">Other Administrators</a>
               <a href="#">Committee for Regulations</a>
-            </div>
-          </div>
-        </div>
-        <div class="top-nav-bar-links">
-          <div class="dropdown-header">Acedemics</div>
-          <div class="dropdown-content">
-            <div class="left-column">
-              <a href="../Academics/Academics.html#school">Schools and Departments</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">ACEDEMICS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+         <a href="../Academics/Academics.html#school">Schools and Departments</a>
               <a href="../Academics/Academics.html#deans">Deans of Various Schools</a>
               <a href="../Academics/Academics.html#head">Head of the Departments</a>
               <a href="../Academics/Academics.html#academic">Academic Calender</a>
               <a href="../Academics/Academics.html#board">Board of Studies</a>
               <a href="../Academics/Academics.html#best">Best Practices</a>
-            </div>
-            <div class="right-column">
               <a href="../Academics/Academics.html#iqac">IQAC</a>
               <a href="../Academics/Academics.html#ugccoaching">UGC Coaching Schemes</a>
               <a href="../Academics/Academics.html#ugccell">UGC Cell</a>
               <a href="../Academics/Academics.html#ciqa">CIQA</a>
               <a href="../Academics/Academics.html#aqar">AQAR:2018-19</a>
-            </div>
-          </div>
-        </div>
-        <div class="top-nav-bar-links">
-          <div class="dropdown-header">Facilities</div>
-          <div class="dropdown-content">
-            <div class="left-column">
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">FACILITIES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
               <a href="../facility and contact/library.html">University Library</a>
               <a href="../facility and contact/computercenter.html">Computer Centre</a>
               <a href="../facility and contact/hostelindex.html">University Hostels</a>
               <a href="../facility and contact/placement.html">Placement Cell</a>
               <a href="../facility and contact/nccindex.html">NCC</a>
-            </div>
-            <div class="right-column">
               <a href="../facility and contact/scstindex.html">SC/ST Cell</a>
               <a href="../facility and contact/nssindex.html">NSS</a>
               <a href="../facility and contact/womencellindex.html">Women's Cell</a>
               <a href="../facility and contact/otherFacilityindex.html">Other Facilities</a>
-            </div>
-          </div>
-        </div>
-        <div class="top-nav-bar-links">
-          <div class="dropdown-header">Admission</div>
-          <div class="dropdown-content">
-            <div class="left-column">
-              <a href="../admissions/UnderGraduate.html">Under-Graduate</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">ADMISSION
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="../admissions/UnderGraduate.html">Under-Graduate</a>
               <a href="../admissions/PostGraduate.html">Post Graduate</a>
               <a href="../admissions/ResearchPrograms.html">Research Programmes</a>
-            </div>
-            <div class="right-column">
-              <a href="#">DUCT-2020-21 Admission Notification</a>
-              <a href="#">DUCET-2020-21 Application</a>
-              <a href="#">DUCET-2020-21 Prospectus (Revised)</a>
-              <a href="#">Hostel Manual</a>
-            </div>
-          </div>
-        </div>
-        <div class="top-nav-bar-links current">
-          <div class="dropdown-header">Journals</div>
-          <div class="dropdown-content">
-            <div class="left-column">
-              <a href="../journals/journal.html">Dravidian Studies : (A Quarterly Research journal)</a>
-            </div>
-            <div class="right-column">
-              <a href="../journals/journal.html">Contentions: Journal of English and Translation Studies
-                (Bi-Annual)</a>
-            </div>
-          </div>
-        </div>
-        <div class="top-nav-bar-links">
-          <div class="dropdown-header">RTI-ACT</div>
-          <div class="dropdown-content">
-            <div class="left-column">
+         
+              <a href="../docfiless/ADMISSION notification.pdf">DUCT-2020-21 Admission Notification</a>
+              <a href="../docfiless/Admission_Application.pdf">DUCET-2020-21 Application</a>
+              <a href="../docfiless/DRAVIDIAN UNIVERSITY how to order form.pdf">DUCET-2020-21 Prospectus (Revised)</a>
+              <a href="../docfiless/Hostel Manual.pdf">Hostel Manual</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">JOURNALS 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="../journals/journal.html">DRAVIDIAN STUDIES:<br>(A QUARTERLY RESEARCH JOURNAL)</a>
+      <a href="../journals/journal.html">CONTENTIONS:<br>JOURNAL OF ENGLISH AND TRANSLATION(BI-ANNUAL)</a>
+    
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">RTI-ACT 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
               <a href="../RTI-ACT/particulars.html">Particulars</a>
               <a href="../RTI-ACT/power_and_duties.html">Power and Duties</a>
               <a href="../RTI-ACT/decision_making.html">Decision Making Process</a>
               <a href="../RTI-ACT/rules_regulations.html">Rules, Regulations etc</a>
               <a href="../RTI-ACT/executive-council.html">Executive Council</a>
               <a href="../RTI-ACT/board_council_commitee.html">Boards, Council and Committees</a>
-            </div>
-            <div class="right-column">
+         
               <a href="../RTI-ACT/officers_employees.html">Directory of its officers and employees</a>
               <a href="../RTI-ACT/renumeration.html">Renumeration</a>
               <a href="../RTI-ACT/budget.html">Budget Allocations</a>
               <a href="../RTI-ACT/subsidy_programs.html">Subsidy Programme</a>
               <a href="../RTI-ACT/rti.html">Public Information Officers</a>
-            </div>
-          </div>
-        </div>
-        <div class="top-nav-bar-links">
-          <div class="dropdown-header">Contact Us</div>
-          <div class="dropdown-content" style="left:unset">
-            <div class="left-column">
+      
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">CONTACT US
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
               <a href="../facility and contact/layoutmaphtml.html">Layout Map</a>
               <a href="../facility and contact/contactindex.html">Contact Numbers</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
+     
+    </div>
+  </div> 
+  
+ 
+ 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 
-      <!-- Side Navigation Bar -->
-      <nav class="side-nav-bar">
-        <a href="./journal.html" class="current">About Dravidian Studies</a>
+<div style="padding-left:16px">
+ 
+<div class="sidenav">
+   <a href="./journal.html" style="padding-top:100px;">About Dravidian Studies</a>
         <a href="./editorialBoard.html">Editorial Board</a>
         <a href="./OurLatestPublication .html">Our Latest Publication</a>
-        <a href="./HowToOrder.html">How to Order</a>
-      </nav>
-      <div class="content">
-        <div id="viewport">
-          <!-- Content -->
-          <div
-            style="background-image: url('https://images.unsplash.com/photo-1573164574230-db1d5e960238?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+        <a href="./HowToOrder.html" class="current">How to Order</a>
+</div>
+
+<div class="main">
+   <div>
+               <br>
             <br>
-            <br>
-            <p style="text-align: center;color: #34495E;font-size: 30px; font-family:  Georgia, serif;color: black ;">
+            <h1 style="text-align: center;color: #34495E;font-size: 30px; font-family:  Georgia, serif;color: black ;">
               <u> Studies (ISSN 0976-5182)<br>
                 (A Quarterly Research Journal)</u>
-            </p>
+            </h1>
             <p style="text-align: center; padding: 7%; font: italic bold 12px/30px Georgia, serif;color: black ;">
               Dravidian University, having come into existence in 1997, traversed a distance of 16 years in time in
               the cause of the Dravidian. Originated as a university with the special characteristic of serving the
@@ -265,16 +440,40 @@
               Philadelphia: University of Pennsylvania Press, 2007, Print. As per APA Style sheet Anderson, I.
               (2007). This is Our Music: Free jazz, the sixties, and American culture. Philadelphia: University of
               Pennsylvania Press, Print.</p>
-          </div>
-        </div>
-      </div>
-    </main>
     <!-- Footer Text -->
-    <footer>
-      <h3>Copyright &copy; 2021</h3>
-      <p>Developed By WebStudent</p>
-    </footer>
-    <script src="../asset/js/index.js"></script>
-  </body>
+     <div style="background-color: black;opacity: 0.6;">
+          
+          <p style="text-align: center;padding: 3%;color: white;">Copyright &copy; 2021<br>Developed By WebStudent</p>
+        </div>
+</div>
+</div>
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+</body>
 </html>
