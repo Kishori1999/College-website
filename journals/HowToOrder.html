@@ -1,467 +1,503 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {margin:0 ;font-family:Arial}
 
-.topnav {
-  overflow: hidden;
-  background-color: black;
-  z-index: 9999;
-  width: 100%;
- 
- 
-}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Srinivasa Education Institute</title>
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 0px 0px;
-  text-decoration: none;
-  font-size: 17px;
-  
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial
+    }
 
-  
-}
+    .topnav {
+      overflow: hidden;
+      background-color: black;
+      z-index: 9999;
+      width: 100%;
 
-.active {
-  background-color: #04AA6D;
-  color: white;
-   border-radius: 50%;
-}
 
-.topnav .icon {
-  display: none;
-}
+    }
 
-.dropdown {
-  float: left;
- overflow: hidden;
- }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 0px 0px;
+      text-decoration: none;
+      font-size: 17px;
 
-.dropdown .dropbtn {
-  font-size: 17px;    
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  
 
-  
-}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  z-index: 1;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  min-width: 160px;
-}
+    }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+    .active {
+      background-color: #04AA6D;
+      color: white;
+      border-radius: 50%;
+    }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
-}
+    .topnav .icon {
+      display: none;
+    }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+    .dropdown .dropbtn {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
 
-    text-align: left;
-  }
-}
-</style>
+    }
 
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      z-index: 1;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      min-width: 160px;
+    }
 
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 20%;
-  position: fixed;
-  top: 15%;
-  left: 0;
-  background-color: #111;
- 
-  padding-top: 1%;
-}
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
 
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 50px 4px 3px 8px;
-  text-decoration: none;
-  font-size: 100%;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width: 80%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
+    .topnav a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #555;
+      color: white;
+    }
 
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
-/* Main content */
-.main {
-  margin-left: 20%; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px;
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
 
-}
+    @media screen and (max-width: 600px) {
 
-/* Add an active class to the active dropdown button */
-.active {
-  background-color:black;
-  color: white;
-  height: 7%;
-	width: 7%;
-	border-radius: 50%;
-	padding: 0;
-	
-}
+      .topnav a:not(:first-child),
+      .dropdown .dropbtn {
+        display: none;
+      }
 
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
 
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {
+        position: relative;
+      }
 
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 10px;}
-  .sidenav a {font-size: 18px;}
-}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
 
-img{
-	
-	border-radius: 50%;
-	min-height: 80px;
-	min-width: 80px;
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
 
-}
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-}
-</style>
-</head>
-<body>
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active" ><img src="../logoo.png" width="100%"  height="100%" z-index="1" border-radius:"50%" /></a>
-  <div class="dropdown">
-    <button class="dropbtn">ABOUT US 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-     <a href="../index and about us/Objective.html">Objectives</a>
-              <a href="../index and about us/Vission and Mission.html">Vision & Mission</a>
-              <a href="../index and about us/Core values.html">Core Values</a>
-              <a href="../index and about us/University Profile.html">University Profile</a>
-      <a href="../index and about us/Our Logo.html">Our Logo</a>
-      <a href="../index and about us/Successive Vice-Chancellors.html">Successive Vice-Chancellors</a>
-              <a href="../index and about us/Organogram.html">Organogram</a>
-              <a href="../index and about us/Newsletter.html">Newsletter</a>
+      .topnav.responsive .dropdown {
+        float: none;
+      }
+
+      .topnav.responsive .dropdown-content {
+        position: relative;
+      }
+
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+
+        text-align: left;
+      }
+    }
+  </style>
+
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    /* Fixed sidenav, full height */
+    .sidenav {
+      height: 100%;
+      width: 20%;
+      position: fixed;
+      top: 15%;
+      left: 0;
+      background-color: #111;
+
+      padding-top: 1%;
+    }
+
+    /* Style the sidenav links and the dropdown button */
+    .sidenav a,
+    .dropdown-btn {
+      padding: 50px 4px 3px 8px;
+      text-decoration: none;
+      font-size: 100%;
+      color: #818181;
+      display: block;
+      border: none;
+      background: none;
+      width: 80%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* On mouse-over */
+    .sidenav a:hover,
+    .dropdown-btn:hover {
+      color: #f1f1f1;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 20%;
+      /* Same as the width of the sidenav */
+      font-size: 20px;
+      /* Increased text to enable scrolling */
+      padding: 0px;
+
+    }
+
+    /* Add an active class to the active dropdown button */
+    .active {
+      background-color: black;
+      color: white;
+      height: 7%;
+      width: 7%;
+      border-radius: 50%;
+      padding: 0;
+
+    }
+
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+      display: none;
+      background-color: #262626;
+      padding-left: 8px;
+    }
+
+    /* Optional: Style the caret down icon */
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+
+    /* Some media queries for responsiveness */
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 10px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    img {
+
+      border-radius: 50%;
+      min-height: 80px;
+      min-width: 80px;
+
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active"><img src="../logoo.png" width="100%" height="100%" z-index="1"
+          border-radius:"50%" /></a>
+      <div class="dropdown">
+        <button class="dropbtn">ABOUT US
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../index and about us/Objective.html">Objectives</a>
+          <a href="../index and about us/Vission and Mission.html">Vision & Mission</a>
+          <a href="../index and about us/Core values.html">Core Values</a>
+          <a href="../index and about us/University Profile.html">University Profile</a>
+          <a href="../index and about us/Our Logo.html">Our Logo</a>
+          <a href="../index and about us/Successive Vice-Chancellors.html">Successive Vice-Chancellors</a>
+          <a href="../index and about us/Organogram.html">Organogram</a>
+          <a href="../index and about us/Newsletter.html">Newsletter</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">ADMINISTRATION
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../Administration/Administration.html">Vice-Chancellor</a>
+          <a href="../Administration/rector.html">Rector</a>
+          <a href="../Administration/registrar.html">Registrar</a>
+          <a href="../Administration/executivecouncil.html">Executive Council</a>
+          <a href="../Administration/academicsenate.html">Academic Senate</a>
+          <a href="../Administration/academicdean.html">Dean Academics</a>
+          <a href="../Administration/other.html">Other Administrators</a>
+          <a href="#">Committee for Regulations</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">ACEDEMICS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../Academics/Academics.html">Schools and Departments</a>
+          <a href="../Academics/Deansofvarious.html">Deans of Various Schools</a>
+          <a href="../Academics/headdepartment.html">Head of the Departments</a>
+          <a href="../Academics/doc/Academic_Calenders_2018-20.pdf">Academic Calender</a>
+          <a href="../Academics/boardstudies.html">Board of Studies</a>
+          <a href="../Academics/doc/best_Practice1&2.pdf">Best Practices</a>
+          <a href="../Academics/iqac.html">IQAC</a>
+          <a href="../Academics/ugccoachingscheme.html">UGC Coaching Schemes</a>
+          <a href="../Academics/ugccell.html">UGC Cell</a>
+          <a href="../Academics/ciqa.html">CIQA</a>
+          <a href="../Academics/doc/doc6.pdf">AQAR:2018-19</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">FACILITIES
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../facility and contact/library.html">University Library</a>
+          <a href="../facility and contact/computercenter.html">Computer Centre</a>
+          <a href="../facility and contact/hostelindex.html">University Hostels</a>
+          <a href="../facility and contact/placement.html">Placement Cell</a>
+          <a href="../facility and contact/nccindex.html">NCC</a>
+          <a href="../facility and contact/scstindex.html">SC/ST Cell</a>
+          <a href="../facility and contact/nssindex.html">NSS</a>
+          <a href="../facility and contact/womencellindex.html">Women's Cell</a>
+          <a href="../facility and contact/otherFacilityindex.html">Other Facilities</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">ADMISSION
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../admissions/intermediate.html">Intermediate</a>
+          <a href="../admissions/UnderGraduate.html">Under-Graduate</a>
+
+          <a href="#">DUCT-2020-21 Admission Notification</a>
+          <a href="#">DUCET-2020-21 Application</a>
+          <a href="#">DUCET-2020-21 Prospectus (Revised)</a>
+          <a href="#">Hostel Manual</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">JOURNALS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../journals/journal.html">DRAVIDIAN STUDIES:<br>(A QUARTERLY RESEARCH JOURNAL)</a>
+          <a href="../journals/journal.html">CONTENTIONS:<br>JOURNAL OF ENGLISH AND TRANSLATION(BI-ANNUAL)</a>
+
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">RTI-ACT
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../RTI-ACT/particulars.html">Particulars</a>
+          <a href="../RTI-ACT/power_and_duties.html">Power and Duties</a>
+          <a href="../RTI-ACT/decision_making.html">Decision Making Process</a>
+          <a href="../RTI-ACT/rules_regulations.html">Rules, Regulations etc</a>
+          <a href="../Administration/executivecouncil.html">Executive Council</a>
+          <a href="../RTI-ACT/board_council_commitee.html">Boards, Council and Committees</a>
+
+          <a href="../RTI-ACT/officers_employees.html">Directory of its officers and employees</a>
+          <a href="../RTI-ACT/renumeration.html">Renumeration</a>
+          <a href="../RTI-ACT/budget.html">Budget Allocations</a>
+          <a href="../RTI-ACT/subsidy_programs.html">Subsidy Programme</a>
+          <a href="../RTI-ACT/rti.html">Public Information Officers</a>
+
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">CONTACT US
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../facility and contact/layoutmaphtml.html">Layout Map</a>
+          <a href="../facility and contact/contactindex.html">Contact Numbers</a>
+
+        </div>
+      </div>
+
+
+
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">ADMINISTRATION 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-         <a href="../Administration/Administration.html#vice">Vice-Chancellor</a>
-              <a href="../Administration/Administration.html#rector">Rector</a>
-              <a href="../Administration/Administration.html#registrar">Registrar</a>
-              <a href="../RTI-ACT/executive-council.html">Executive Council</a>
-              <a href="../Administration/Administration.html#senate">Academic Senate</a>
-              <a href="../Administration/Administration.html#dean">Dean Academics</a>
-              <a href="../Administration/Administration.html#other">Other Administrators</a>
-              <a href="#">Committee for Regulations</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">ACEDEMICS
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-         <a href="../Academics/Academics.html#school">Schools and Departments</a>
-              <a href="../Academics/Academics.html#deans">Deans of Various Schools</a>
-              <a href="../Academics/Academics.html#head">Head of the Departments</a>
-              <a href="../Academics/Academics.html#academic">Academic Calender</a>
-              <a href="../Academics/Academics.html#board">Board of Studies</a>
-              <a href="../Academics/Academics.html#best">Best Practices</a>
-              <a href="../Academics/Academics.html#iqac">IQAC</a>
-              <a href="../Academics/Academics.html#ugccoaching">UGC Coaching Schemes</a>
-              <a href="../Academics/Academics.html#ugccell">UGC Cell</a>
-              <a href="../Academics/Academics.html#ciqa">CIQA</a>
-              <a href="../Academics/Academics.html#aqar">AQAR:2018-19</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">FACILITIES
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-              <a href="../facility and contact/library.html">University Library</a>
-              <a href="../facility and contact/computercenter.html">Computer Centre</a>
-              <a href="../facility and contact/hostelindex.html">University Hostels</a>
-              <a href="../facility and contact/placement.html">Placement Cell</a>
-              <a href="../facility and contact/nccindex.html">NCC</a>
-              <a href="../facility and contact/scstindex.html">SC/ST Cell</a>
-              <a href="../facility and contact/nssindex.html">NSS</a>
-              <a href="../facility and contact/womencellindex.html">Women's Cell</a>
-              <a href="../facility and contact/otherFacilityindex.html">Other Facilities</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">ADMISSION
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-        <a href="../admissions/UnderGraduate.html">Under-Graduate</a>
-              <a href="../admissions/PostGraduate.html">Post Graduate</a>
-              <a href="../admissions/ResearchPrograms.html">Research Programmes</a>
-         
-              <a href="../docfiless/ADMISSION notification.pdf">DUCT-2020-21 Admission Notification</a>
-              <a href="../docfiless/Admission_Application.pdf">DUCET-2020-21 Application</a>
-              <a href="../docfiless/DRAVIDIAN UNIVERSITY how to order form.pdf">DUCET-2020-21 Prospectus (Revised)</a>
-              <a href="../docfiless/Hostel Manual.pdf">Hostel Manual</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">JOURNALS 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="../journals/journal.html">DRAVIDIAN STUDIES:<br>(A QUARTERLY RESEARCH JOURNAL)</a>
-      <a href="../journals/journal.html">CONTENTIONS:<br>JOURNAL OF ENGLISH AND TRANSLATION(BI-ANNUAL)</a>
-    
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">RTI-ACT 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-              <a href="../RTI-ACT/particulars.html">Particulars</a>
-              <a href="../RTI-ACT/power_and_duties.html">Power and Duties</a>
-              <a href="../RTI-ACT/decision_making.html">Decision Making Process</a>
-              <a href="../RTI-ACT/rules_regulations.html">Rules, Regulations etc</a>
-              <a href="../RTI-ACT/executive-council.html">Executive Council</a>
-              <a href="../RTI-ACT/board_council_commitee.html">Boards, Council and Committees</a>
-         
-              <a href="../RTI-ACT/officers_employees.html">Directory of its officers and employees</a>
-              <a href="../RTI-ACT/renumeration.html">Renumeration</a>
-              <a href="../RTI-ACT/budget.html">Budget Allocations</a>
-              <a href="../RTI-ACT/subsidy_programs.html">Subsidy Programme</a>
-              <a href="../RTI-ACT/rti.html">Public Information Officers</a>
-      
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">CONTACT US
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-              <a href="../facility and contact/layoutmaphtml.html">Layout Map</a>
-              <a href="../facility and contact/contactindex.html">Contact Numbers</a>
-     
-    </div>
-  </div> 
-  
- 
- 
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
 
-<div style="padding-left:16px">
- 
-<div class="sidenav">
-   <a href="./journal.html" style="padding-top:100px;">About Dravidian Studies</a>
+    <div style="padding-left:16px">
+
+      <div class="sidenav">
+        <a href="./journal.html" style="padding-top:100px;">About Dravidian Studies</a>
         <a href="./editorialBoard.html">Editorial Board</a>
         <a href="./OurLatestPublication .html">Our Latest Publication</a>
         <a href="./HowToOrder.html" class="current">How to Order</a>
-</div>
+      </div>
 
-<div class="main">
-   <div>
-            <br>
-            <br>
-            <p style="text-align: center;padding-top:3%;color: #34495E;font-size: 30px; font-family:  Georgia, serif;color: black ;">
-              <u>How To Order</u>
-            </p>
-            <br>
-            <br>
-            <p
-              style="text-align: center; padding-left: 7%;padding-right: 7%; font: italic bold 12px/30px Georgia, serif;color: black ;">
-              For obtaining books from Dravidian University Publications please send D.D. drawn in favour of the
-              Registrar, Dravidian University payable at Kuppam 517 426. Chittoor District, Andhra Pradesh. (Please add
-              Rs.20/- (Rupees twenty only) for postal/courier charges)
-              <br /><br />
-
-              In case of more than one publication by the same author, arrange them in chronological order, with the
-              earlier publication being mentioned first. If there is more than one publication in the same year,
-              indicate
-              them by adding lower case letters of the alphabet to the year. (eg: 1982a, 1982b).
-            </p>
-            <ol
-              style="text-align: left; padding-left: 7%;padding-right: 7%; font: italic bold 12px/30px Georgia, serif;color: black ;">
-              <li>British English spelling is to be used throughout the manuscript. </li>
-              <li>Double quotes should be used throughout. Single quotes should be used only quotes within quotes. </li>
-              <li>Every contribution should be accompanied by a declaration that the article is original and has not
-                been
-                published or submitted elsewhere for publication. </li>
-              <li>Every accepted article will be copy-edited. The editorial board reserves the right to make necessary
-                revisions to the text. </li>
-              <li>Whenever any copyrighted material is used, contributors should accurately reproduce, and obtain
-                permission from the copyright holders, and same should be acknowledged in the article. </li>
-              <li>Every author will receive one complimentary copy of the issue in which one’s paper appears. </li>
-              <li>Book reviews shall be of around 1000 words, and should carry the following details in the order as
-                below: Name of the author, title of the book reviewed, place of publication, name of the publisher, year
-                of publication, number of pages in Roman and Arabic figures to include preliminary pages, and price,
-                with
-                binding specifications as to whether it is paperback or hardcover. </li>
-              <li>The author should send a soft copy on a CD (in MS word) containing the full paper, along with the hard
-                copies, it is necessary that the contents of the CD and the hard copy should be absolutely the same.
-              </li>
-              <li>Manuscripts and books for review ( two copies of the books to be reviewed should be submitted), and
-                all
-                editorial correspondence should be addressed to:
-              </li>
-            </ol>
-            <p
-              style="text-align:left; padding-left: 7%;padding-right: 7%; font: italic bold 12px/30px Georgia, serif;color: black ;">
-              <br />Prof. Ch.A.Rajendra Prasad,<br />
-              Department of English and Communications, <br />
-              Dravidian University<br />
-              Kuppam-517426 <br />
-              Chittoor (Dist.) AP, India.<br /><br />
-            </p>
-            <p
-              style="text-align: left; padding-left: 7%;padding-right: 7%; font: italic bold 12px/30px Georgia, serif;color: black ;">
-              Along with the hard copy of the manuscript, soft copy of the same inevitably should be addressed to: <br>
-              editor.dravidianstudies@gmail.com 15. <br>Subscription Rates: </p>
+      <div class="main">
+        <div>
+          <br>
+          <br>
+          <p
+            style="text-align: center;padding-top:3%;color: #34495E;font-size: 30px; font-family:  Georgia, serif;color: black ;">
+            <u>How To Order</u>
+          </p>
+          <br>
+          <br>
+          <p
+            style="text-align: center; padding-left: 7%;padding-right: 7%; font: italic bold 12px/30px Georgia, serif;color: black ;">
+            For obtaining books from Dravidian University Publications please send D.D. drawn in favour of the
+            Registrar, Dravidian University payable at Kuppam 517 426. Chittoor District, Andhra Pradesh. (Please add
+            Rs.20/- (Rupees twenty only) for postal/courier charges)
             <br /><br />
-            <table style="text-align:center; padding-left: 17%; font: italic bold 12px/30px Georgia, serif;color: black ;">
-              <tr style="padding-left: 18%;">
-                <th style="color:black; width:15% ;"> Single Issue</th>
-                <th style="color:black; width:25%;"> Individuals Rs.75/-($10)</th>
-                <th style="color:black; width:20%;"> Institutions Rs.150/- ($20)</th>
-              </tr>
-              <tr>
-                <td style="color:black;"> Annual Subscription</td>
-                <td style="color:black;"> Rs.250/- ($40)</td>
-                <td style="color:black;"> Rs.300/- ($50)</td>
-              </tr>
-              <tr>
-                <td style="color:black;"> Life Membership</td>
-                <td style="color:black;"> Rs.1500/- ($300)</td>
-                <td style="color:black;"> Rs.3000/- ($500)</td>
-              </tr>
-            </table>
-          </div>
+
+            In case of more than one publication by the same author, arrange them in chronological order, with the
+            earlier publication being mentioned first. If there is more than one publication in the same year,
+            indicate
+            them by adding lower case letters of the alphabet to the year. (eg: 1982a, 1982b).
+          </p>
+          <ol
+            style="text-align: left; padding-left: 7%;padding-right: 7%; font: italic bold 12px/30px Georgia, serif;color: black ;">
+            <li>British English spelling is to be used throughout the manuscript. </li>
+            <li>Double quotes should be used throughout. Single quotes should be used only quotes within quotes. </li>
+            <li>Every contribution should be accompanied by a declaration that the article is original and has not
+              been
+              published or submitted elsewhere for publication. </li>
+            <li>Every accepted article will be copy-edited. The editorial board reserves the right to make necessary
+              revisions to the text. </li>
+            <li>Whenever any copyrighted material is used, contributors should accurately reproduce, and obtain
+              permission from the copyright holders, and same should be acknowledged in the article. </li>
+            <li>Every author will receive one complimentary copy of the issue in which one’s paper appears. </li>
+            <li>Book reviews shall be of around 1000 words, and should carry the following details in the order as
+              below: Name of the author, title of the book reviewed, place of publication, name of the publisher, year
+              of publication, number of pages in Roman and Arabic figures to include preliminary pages, and price,
+              with
+              binding specifications as to whether it is paperback or hardcover. </li>
+            <li>The author should send a soft copy on a CD (in MS word) containing the full paper, along with the hard
+              copies, it is necessary that the contents of the CD and the hard copy should be absolutely the same.
+            </li>
+            <li>Manuscripts and books for review ( two copies of the books to be reviewed should be submitted), and
+              all
+              editorial correspondence should be addressed to:
+            </li>
+          </ol>
+          <p
+            style="text-align:left; padding-left: 7%;padding-right: 7%; font: italic bold 12px/30px Georgia, serif;color: black ;">
+            <br />Prof. Ch.A.Rajendra Prasad,<br />
+            Department of English and Communications, <br />
+            Dravidian University<br />
+            Kuppam-517426 <br />
+            Chittoor (Dist.) AP, India.<br /><br />
+          </p>
+          <p
+            style="text-align: left; padding-left: 7%;padding-right: 7%; font: italic bold 12px/30px Georgia, serif;color: black ;">
+            Along with the hard copy of the manuscript, soft copy of the same inevitably should be addressed to: <br>
+            editor.dravidianstudies@gmail.com 15. <br>Subscription Rates: </p>
+          <br /><br />
+          <table
+            style="text-align:center; padding-left: 17%; font: italic bold 12px/30px Georgia, serif;color: black ;">
+            <tr style="padding-left: 18%;">
+              <th style="color:black; width:15% ;"> Single Issue</th>
+              <th style="color:black; width:25%;"> Individuals Rs.75/-($10)</th>
+              <th style="color:black; width:20%;"> Institutions Rs.150/- ($20)</th>
+            </tr>
+            <tr>
+              <td style="color:black;"> Annual Subscription</td>
+              <td style="color:black;"> Rs.250/- ($40)</td>
+              <td style="color:black;"> Rs.300/- ($50)</td>
+            </tr>
+            <tr>
+              <td style="color:black;"> Life Membership</td>
+              <td style="color:black;"> Rs.1500/- ($300)</td>
+              <td style="color:black;"> Rs.3000/- ($500)</td>
+            </tr>
+          </table>
         </div>
       </div>
-    
+    </div>
+
     <!-- Footer Text -->
-     <div style="background-color: black;opacity: 0.6;">
-          
-          <p style="text-align: center;padding: 3%;color: white;">Copyright &copy; 2021<br>Developed By WebStudent</p>
-        </div>
-</div>
-</div>
+    <div style="background-color: black;opacity: 0.6;">
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+      <p style="text-align: center;padding: 3%;color: white;">Copyright &copy; 2021<br>Developed By WebStudent</p>
+    </div>
+    </div>
+    </div>
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
-</script>
-</body>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+
 </html>
